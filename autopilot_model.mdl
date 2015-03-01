@@ -1,0 +1,5692 @@
+Model {
+  Name			  "autopilot_model"
+  Version		  8.1
+  MdlSubVersion		  0
+  GraphicalInterface {
+    NumRootInports	    0
+    NumRootOutports	    0
+    ParameterArgumentNames  ""
+    ComputedModelVersion    "1.236"
+    NumModelReferences	    0
+    NumTestPointedSignals   0
+  }
+  SavedCharacterEncoding  "windows-1252"
+  slprops.hdlmdlprops {
+    $PropName		    "HDLParams"
+    $ObjectID		    1
+    Array {
+      Type		      "Cell"
+      Dimension		      2
+      Cell		      "HDLSubsystem"
+      Cell		      "autopilot_model"
+      PropName		      "mdlProps"
+    }
+  }
+  SaveDefaultBlockParams  on
+  ScopeRefreshTime	  0.035000
+  OverrideScopeRefreshTime on
+  DisableAllScopes	  off
+  DataTypeOverride	  "UseLocalSettings"
+  DataTypeOverrideAppliesTo "AllNumericTypes"
+  MinMaxOverflowLogging	  "UseLocalSettings"
+  MinMaxOverflowArchiveMode "Overwrite"
+  FPTRunName		  "Run 1"
+  MaxMDLFileLineLength	  120
+  Object {
+    $PropName		    "BdWindowsInfo"
+    $ObjectID		    2
+    $ClassName		    "Simulink.BDWindowsInfo"
+    Object {
+      $PropName		      "WindowsInfo"
+      $ObjectID		      3
+      $ClassName	      "Simulink.WindowInfo"
+      IsActive		      [1]
+      Location		      [-8.0, 19.0, 1308.0, 598.0]
+      Object {
+	$PropName		"ModelBrowserInfo"
+	$ObjectID		4
+	$ClassName		"Simulink.ModelBrowserInfo"
+	Visible			[0]
+	DockPosition		"Left"
+	Width			[50]
+	Height			[50]
+	Filter			[8]
+      }
+      Object {
+	$PropName		"ExplorerBarInfo"
+	$ObjectID		5
+	$ClassName		"Simulink.ExplorerBarInfo"
+	Visible			[0]
+      }
+      Object {
+	$PropName		"EditorsInfo"
+	$ObjectID		6
+	$ClassName		"Simulink.EditorInfo"
+	IsActive		[1]
+	ViewObjType		"SimulinkTopLevel"
+	LoadSaveID		"0"
+	Extents			[1258.0, 456.0]
+	ZoomFactor		[1.21]
+	Offset			[-11.993801652892795, 23.140495867769264]
+      }
+    }
+  }
+  Created		  "Wed Apr 20 15:18:05 2011"
+  Creator		  "nocs"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "valeria"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Sun Mar 01 14:42:44 2015"
+  RTWModifiedTimeStamp	  347121755
+  ModelVersionFormat	  "1.%<AutoIncrement:236>"
+  ConfigurationManager	  "None"
+  SampleTimeColors	  on
+  SampleTimeAnnotations	  off
+  LibraryLinkDisplay	  "none"
+  WideLines		  off
+  ShowLineDimensions	  on
+  ShowPortDataTypes	  on
+  ShowDesignRanges	  off
+  ShowLoopsOnError	  on
+  IgnoreBidirectionalLines off
+  ShowStorageClass	  off
+  ShowTestPointIcons	  on
+  ShowSignalResolutionIcons on
+  ShowViewerIcons	  on
+  SortedOrder		  on
+  ExecutionContextIcon	  off
+  ShowLinearizationAnnotations on
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  SimulationMode	  "normal"
+  LinearizationMsg	  "none"
+  Profile		  off
+  ParamWorkspaceSource	  "MATLABWorkspace"
+  AccelSystemTargetFile	  "accel.tlc"
+  AccelTemplateMakefile	  "accel_default_tmf"
+  AccelMakeCommand	  "make_rtw"
+  TryForcingSFcnDF	  off
+  Object {
+    $PropName		    "DataLoggingOverride"
+    $ObjectID		    7
+    $ClassName		    "Simulink.SimulationData.ModelLoggingInfo"
+    model_		    "autopilot_model"
+    Array {
+      Type		      "Cell"
+      Dimension		      1
+      Cell		      "autopilot_model"
+      PropName		      "logAsSpecifiedByModels_"
+    }
+    Array {
+      Type		      "Cell"
+      Dimension		      1
+      Cell		      ""
+      PropName		      "logAsSpecifiedByModelsSSIDs_"
+    }
+  }
+  RecordCoverage	  off
+  CovPath		  "/"
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  CovForceBlockReductionOff on
+  covSaveCumulativeToWorkspaceVar on
+  CovSaveSingleToWorkspaceVar on
+  CovCumulativeVarName	  "covCumulativeData"
+  CovCumulativeReport	  off
+  CovReportOnPause	  on
+  CovModelRefEnable	  "Off"
+  CovExternalEMLEnable	  off
+  ExtModeBatchMode	  off
+  ExtModeEnableFloating	  on
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigDurationFloating "auto"
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  BufferReuse		  on
+  ShowModelReferenceBlockVersion off
+  ShowModelReferenceBlockIO off
+  Array {
+    Type		    "Handle"
+    Dimension		    1
+    Simulink.ConfigSet {
+      $ObjectID		      8
+      Version		      "1.13.0"
+      Array {
+	Type			"Handle"
+	Dimension		10
+	Simulink.SolverCC {
+	  $ObjectID		  9
+	  Version		  "1.13.0"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    1
+	    Cell		    "PositivePriorityOrder"
+	    PropName		    "DisabledProps"
+	  }
+	  StartTime		  "0.0"
+	  StopTime		  "inf"
+	  AbsTol		  "auto"
+	  FixedStep		  "1/100"
+	  InitialStep		  "auto"
+	  MaxNumMinSteps	  "-1"
+	  MaxOrder		  5
+	  ZcThreshold		  "auto"
+	  ConsecutiveZCsStepRelTol "10*128*eps"
+	  MaxConsecutiveZCs	  "1000"
+	  ExtrapolationOrder	  4
+	  NumberNewtonIterations  1
+	  MaxStep		  "auto"
+	  MinStep		  "auto"
+	  MaxConsecutiveMinStep	  "1"
+	  RelTol		  "1e-3"
+	  SolverMode		  "Auto"
+	  EnableConcurrentExecution off
+	  ConcurrentTasks	  off
+	  Solver		  "FixedStepDiscrete"
+	  SolverName		  "FixedStepDiscrete"
+	  SolverJacobianMethodControl "auto"
+	  ShapePreserveControl	  "DisableAll"
+	  ZeroCrossControl	  "UseLocalSettings"
+	  ZeroCrossAlgorithm	  "Nonadaptive"
+	  AlgebraicLoopSolver	  "TrustRegion"
+	  SolverResetMethod	  "Fast"
+	  PositivePriorityOrder	  off
+	  AutoInsertRateTranBlk	  off
+	  SampleTimeConstraint	  "Unconstrained"
+	  InsertRTBMode		  "Whenever possible"
+	}
+	Simulink.DataIOCC {
+	  $ObjectID		  10
+	  Version		  "1.13.0"
+	  Decimation		  "1"
+	  ExternalInput		  "[t, u]"
+	  FinalStateName	  "xFinal"
+	  InitialState		  "xInitial"
+	  LimitDataPoints	  on
+	  MaxDataPoints		  "1000"
+	  LoadExternalInput	  off
+	  LoadInitialState	  off
+	  SaveFinalState	  off
+	  SaveCompleteFinalSimState off
+	  SaveFormat		  "Array"
+	  SignalLoggingSaveFormat "ModelDataLogs"
+	  SaveOutput		  off
+	  SaveState		  off
+	  SignalLogging		  on
+	  DSMLogging		  on
+	  InspectSignalLogs	  off
+	  SaveTime		  off
+	  ReturnWorkspaceOutputs  off
+	  StateSaveName		  "xout"
+	  TimeSaveName		  "tout"
+	  OutputSaveName	  "yout"
+	  SignalLoggingName	  "logsout"
+	  DSMLoggingName	  "dsmout"
+	  OutputOption		  "RefineOutputTimes"
+	  OutputTimes		  "[]"
+	  ReturnWorkspaceOutputsName "out"
+	  Refine		  "1"
+	}
+	Simulink.OptimizationCC {
+	  $ObjectID		  11
+	  Version		  "1.13.0"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    2
+	    Cell		    "MaxStackSize"
+	    Cell		    "ZeroInternalMemoryAtStartup"
+	    PropName		    "DisabledProps"
+	  }
+	  BlockReduction	  on
+	  BooleanDataType	  on
+	  ConditionallyExecuteInputs on
+	  InlineParams		  off
+	  UseIntDivNetSlope	  off
+	  UseFloatMulNetSlope	  off
+	  UseSpecifiedMinMax	  off
+	  InlineInvariantSignals  off
+	  OptimizeBlockIOStorage  on
+	  BufferReuse		  on
+	  EnhancedBackFolding	  off
+	  StrengthReduction	  off
+	  ExpressionFolding	  on
+	  BooleansAsBitfields	  off
+	  BitfieldContainerType	  "uint_T"
+	  EnableMemcpy		  on
+	  MemcpyThreshold	  64
+	  PassReuseOutputArgsAs	  "Structure reference"
+	  ExpressionDepthLimit	  2147483647
+	  FoldNonRolledExpr	  on
+	  LocalBlockOutputs	  on
+	  RollThreshold		  5
+	  SystemCodeInlineAuto	  off
+	  StateBitsets		  off
+	  DataBitsets		  off
+	  UseTempVars		  off
+	  ZeroExternalMemoryAtStartup on
+	  ZeroInternalMemoryAtStartup on
+	  InitFltsAndDblsToZero	  off
+	  NoFixptDivByZeroProtection off
+	  EfficientFloat2IntCast  off
+	  EfficientMapNaN2IntZero on
+	  OptimizeModelRefInitCode on
+	  LifeSpan		  "1"
+	  MaxStackSize		  "Inherit from target"
+	  BufferReusableBoundary  on
+	  SimCompilerOptimization "Off"
+	  AccelVerboseBuild	  off
+	  ParallelExecutionInRapidAccelerator on
+	}
+	Simulink.DebuggingCC {
+	  $ObjectID		  12
+	  Version		  "1.13.0"
+	  RTPrefix		  "error"
+	  ConsistencyChecking	  "none"
+	  ArrayBoundsChecking	  "none"
+	  SignalInfNanChecking	  "none"
+	  SignalRangeChecking	  "none"
+	  ReadBeforeWriteMsg	  "UseLocalSettings"
+	  WriteAfterWriteMsg	  "UseLocalSettings"
+	  WriteAfterReadMsg	  "UseLocalSettings"
+	  AlgebraicLoopMsg	  "warning"
+	  ArtificialAlgebraicLoopMsg "warning"
+	  SaveWithDisabledLinksMsg "warning"
+	  SaveWithParameterizedLinksMsg	"warning"
+	  CheckSSInitialOutputMsg on
+	  UnderspecifiedInitializationDetection	"Classic"
+	  MergeDetectMultiDrivingBlocksExec "none"
+	  CheckExecutionContextPreStartOutputMsg off
+	  CheckExecutionContextRuntimeOutputMsg	off
+	  SignalResolutionControl "UseLocalSettings"
+	  BlockPriorityViolationMsg "warning"
+	  MinStepSizeMsg	  "warning"
+	  TimeAdjustmentMsg	  "none"
+	  MaxConsecutiveZCsMsg	  "error"
+	  MaskedZcDiagnostic	  "warning"
+	  IgnoredZcDiagnostic	  "warning"
+	  SolverPrmCheckMsg	  "warning"
+	  InheritedTsInSrcMsg	  "warning"
+	  DiscreteInheritContinuousMsg "warning"
+	  MultiTaskDSMMsg	  "error"
+	  MultiTaskCondExecSysMsg "error"
+	  MultiTaskRateTransMsg	  "error"
+	  SingleTaskRateTransMsg  "none"
+	  TasksWithSamePriorityMsg "warning"
+	  SigSpecEnsureSampleTimeMsg "warning"
+	  CheckMatrixSingularityMsg "none"
+	  IntegerOverflowMsg	  "warning"
+	  Int32ToFloatConvMsg	  "warning"
+	  ParameterDowncastMsg	  "error"
+	  ParameterOverflowMsg	  "error"
+	  ParameterUnderflowMsg	  "none"
+	  ParameterPrecisionLossMsg "warning"
+	  ParameterTunabilityLossMsg "warning"
+	  FixptConstUnderflowMsg  "none"
+	  FixptConstOverflowMsg	  "none"
+	  FixptConstPrecisionLossMsg "none"
+	  UnderSpecifiedDataTypeMsg "none"
+	  UnnecessaryDatatypeConvMsg "none"
+	  VectorMatrixConversionMsg "none"
+	  InvalidFcnCallConnMsg	  "error"
+	  FcnCallInpInsideContextMsg "UseLocalSettings"
+	  SignalLabelMismatchMsg  "none"
+	  UnconnectedInputMsg	  "warning"
+	  UnconnectedOutputMsg	  "warning"
+	  UnconnectedLineMsg	  "warning"
+	  SFcnCompatibilityMsg	  "none"
+	  FrameProcessingCompatibilityMsg "warning"
+	  UniqueDataStoreMsg	  "none"
+	  BusObjectLabelMismatch  "warning"
+	  RootOutportRequireBusObject "warning"
+	  AssertControl		  "UseLocalSettings"
+	  EnableOverflowDetection off
+	  ModelReferenceIOMsg	  "none"
+	  ModelReferenceMultiInstanceNormalModeStructChecksumCheck "error"
+	  ModelReferenceVersionMismatchMessage "none"
+	  ModelReferenceIOMismatchMessage "none"
+	  ModelReferenceCSMismatchMessage "none"
+	  UnknownTsInhSupMsg	  "warning"
+	  ModelReferenceDataLoggingMessage "warning"
+	  ModelReferenceSymbolNameMessage "warning"
+	  ModelReferenceExtraNoncontSigs "error"
+	  StateNameClashWarn	  "warning"
+	  SimStateInterfaceChecksumMismatchMsg "warning"
+	  SimStateOlderReleaseMsg "error"
+	  InitInArrayFormatMsg	  "warning"
+	  StrictBusMsg		  "ErrorLevel1"
+	  BusNameAdapt		  "WarnAndRepair"
+	  NonBusSignalsTreatedAsBus "none"
+	  LoggingUnavailableSignals "error"
+	  BlockIODiagnostic	  "none"
+	  SFUnusedDataAndEventsDiag "warning"
+	  SFUnexpectedBacktrackingDiag "warning"
+	  SFInvalidInputDataAccessInChartInitDiag "warning"
+	  SFNoUnconditionalDefaultTransitionDiag "warning"
+	  SFTransitionOutsideNaturalParentDiag "warning"
+	  SFUnconditionalTransitionShadowingDiag "warning"
+	  SFUndirectedBroadcastEventsDiag "warning"
+	  SFTransitionActionBeforeConditionDiag	"warning"
+	}
+	Simulink.HardwareCC {
+	  $ObjectID		  13
+	  Version		  "1.13.0"
+	  ProdBitPerChar	  16
+	  ProdBitPerShort	  16
+	  ProdBitPerInt		  16
+	  ProdBitPerLong	  32
+	  ProdBitPerLongLong	  64
+	  ProdBitPerFloat	  32
+	  ProdBitPerDouble	  64
+	  ProdBitPerPointer	  16
+	  ProdLargestAtomicInteger "Integer"
+	  ProdLargestAtomicFloat  "None"
+	  ProdIntDivRoundTo	  "Zero"
+	  ProdEndianess		  "LittleEndian"
+	  ProdWordSize		  16
+	  ProdShiftRightIntArith  on
+	  ProdLongLongMode	  off
+	  ProdHWDeviceType	  "Texas Instruments->C2000"
+	  TargetBitPerChar	  8
+	  TargetBitPerShort	  16
+	  TargetBitPerInt	  32
+	  TargetBitPerLong	  32
+	  TargetBitPerLongLong	  64
+	  TargetBitPerFloat	  32
+	  TargetBitPerDouble	  64
+	  TargetBitPerPointer	  32
+	  TargetLargestAtomicInteger "Char"
+	  TargetLargestAtomicFloat "None"
+	  TargetShiftRightIntArith on
+	  TargetLongLongMode	  off
+	  TargetIntDivRoundTo	  "Undefined"
+	  TargetEndianess	  "Unspecified"
+	  TargetWordSize	  32
+	  TargetTypeEmulationWarnSuppressLevel 0
+	  TargetPreprocMaxBitsSint 32
+	  TargetPreprocMaxBitsUint 32
+	  TargetHWDeviceType	  "Specified"
+	  TargetUnknown		  off
+	  ProdEqTarget		  on
+	}
+	Simulink.ModelReferenceCC {
+	  $ObjectID		  14
+	  Version		  "1.13.0"
+	  UpdateModelReferenceTargets "IfOutOfDateOrStructuralChange"
+	  CheckModelReferenceTargetMessage "error"
+	  EnableParallelModelReferenceBuilds off
+	  ParallelModelReferenceErrorOnInvalidPool on
+	  ParallelModelReferenceMATLABWorkerInit "None"
+	  ModelReferenceNumInstancesAllowed "Multi"
+	  PropagateVarSize	  "Infer from blocks in model"
+	  ModelReferencePassRootInputsByReference on
+	  ModelReferenceMinAlgLoopOccurrences off
+	  PropagateSignalLabelsOutOfModel off
+	  SupportModelReferenceSimTargetCustomCode off
+	}
+	Simulink.SFSimCC {
+	  $ObjectID		  15
+	  Version		  "1.13.0"
+	  SFSimEnableDebug	  on
+	  SFSimOverflowDetection  on
+	  SFSimEcho		  on
+	  SimBlas		  on
+	  SimCtrlC		  on
+	  SimExtrinsic		  on
+	  SimIntegrity		  on
+	  SimUseLocalCustomCode	  off
+	  SimParseCustomCode	  on
+	  SimBuildMode		  "sf_incremental_build"
+	}
+	Simulink.RTWCC {
+	  $BackupClass		  "Simulink.RTWCC"
+	  $ObjectID		  16
+	  Version		  "1.13.0"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    2
+	    Cell		    "GenerateMakefile"
+	    Cell		    "GenCodeOnly"
+	    PropName		    "DisabledProps"
+	  }
+	  SystemTargetFile	  "idelink_ert.tlc"
+	  GenCodeOnly		  off
+	  MakeCommand		  "make_rtw"
+	  GenerateMakefile	  off
+	  PackageGeneratedCodeAndArtifacts off
+	  TemplateMakefile	  "idelink_ert.tmf"
+	  Description		  "Embedded IDE Link ERT"
+	  GenerateReport	  off
+	  SaveLog		  off
+	  RTWVerbose		  on
+	  RetainRTWFile		  off
+	  ProfileTLC		  off
+	  TLCDebug		  off
+	  TLCCoverage		  off
+	  TLCAssert		  off
+	  ProcessScriptMode	  "Default"
+	  ConfigurationMode	  "Optimized"
+	  ProcessScript		  "idelink_ert_make_rtw_hook"
+	  ConfigAtBuild		  off
+	  RTWUseLocalCustomCode	  off
+	  RTWUseSimCustomCode	  off
+	  IncludeHyperlinkInReport off
+	  LaunchReport		  off
+	  PortableWordSizes	  off
+	  GenerateErtSFunction	  off
+	  CreateSILPILBlock	  "None"
+	  CodeExecutionProfiling  off
+	  CodeExecutionProfileVariable "executionProfile"
+	  CodeProfilingSaveOptions "SummaryOnly"
+	  CodeProfilingInstrumentation off
+	  SILDebugging		  off
+	  TargetLang		  "C"
+	  IncludeBusHierarchyInRTWFileBlockHierarchyMap	off
+	  IncludeERTFirstTime	  off
+	  GenerateTraceInfo	  off
+	  GenerateTraceReport	  off
+	  GenerateTraceReportSl	  off
+	  GenerateTraceReportSf	  off
+	  GenerateTraceReportEml  off
+	  GenerateCodeInfo	  off
+	  GenerateWebview	  off
+	  GenerateCodeMetricsReport off
+	  GenerateCodeReplacementReport	off
+	  RTWCompilerOptimization "Off"
+	  CheckMdlBeforeBuild	  "Off"
+	  CustomRebuildMode	  "OnUpdate"
+	  Array {
+	    Type		    "Handle"
+	    Dimension		    2
+	    Simulink.CodeAppCC {
+	      $ObjectID		      17
+	      Version		      "1.13.0"
+	      ForceParamTrailComments off
+	      GenerateComments	      on
+	      IgnoreCustomStorageClasses off
+	      IgnoreTestpoints	      off
+	      IncHierarchyInIds	      off
+	      MaxIdLength	      31
+	      PreserveName	      off
+	      PreserveNameWithParent  off
+	      ShowEliminatedStatement off
+	      OperatorAnnotations     off
+	      IncAutoGenComments      off
+	      SimulinkDataObjDesc     off
+	      SFDataObjDesc	      off
+	      MATLABFcnDesc	      off
+	      IncDataTypeInIds	      off
+	      MangleLength	      1
+	      CustomSymbolStrGlobalVar "$R$N$M"
+	      CustomSymbolStrType     "$N$R$M"
+	      CustomSymbolStrField    "$N$M"
+	      CustomSymbolStrFcn      "$R$N$M$F"
+	      CustomSymbolStrFcnArg   "rt$I$N$M"
+	      CustomSymbolStrBlkIO    "rtb_$N$M"
+	      CustomSymbolStrTmpVar   "$N$M"
+	      CustomSymbolStrMacro    "$R$N$M"
+	      DefineNamingRule	      "None"
+	      ParamNamingRule	      "None"
+	      SignalNamingRule	      "None"
+	      InsertBlockDesc	      off
+	      InsertPolySpaceComments off
+	      SimulinkBlockComments   on
+	      MATLABSourceComments    off
+	      EnableCustomComments    off
+	      InternalIdentifier      "Classic"
+	      InlinedPrmAccess	      "Literals"
+	      ReqsInCode	      off
+	      UseSimReservedNames     off
+	    }
+	    pjtgeneratorpkg.ERTFactory {
+	      $BackupClass	      "Simulink.TargetCC"
+	      $ObjectID		      18
+	      Version		      "1.13.0"
+	      Array {
+		Type			"Cell"
+		Dimension		3
+		Cell			"GenerateSampleERTMain"
+		Cell			"ERTFilePackagingFormat"
+		Cell			"GRTInterface"
+		PropName		"DisabledProps"
+	      }
+	      TargetFcnLib	      "ansi_tfl_table_tmw.mat"
+	      TargetLibSuffix	      ""
+	      TargetPreCompLibLocation ""
+	      CodeReplacementLibrary  "ANSI_C"
+	      UtilityFuncGeneration   "Auto"
+	      ERTMultiwordTypeDef     "System defined"
+	      ERTMultiwordLength      256
+	      MultiwordLength	      2048
+	      GenerateFullHeader      on
+	      GenerateSampleERTMain   off
+	      GenerateTestInterfaces  off
+	      IsPILTarget	      off
+	      ModelReferenceCompliant on
+	      ParMdlRefBuildCompliant off
+	      CompOptLevelCompliant   off
+	      ConcurrentExecutionCompliant on
+	      IncludeMdlTerminateFcn  on
+	      GeneratePreprocessorConditionals "Disable all"
+	      CombineOutputUpdateFcns on
+	      CombineSignalStateStructs	off
+	      SuppressErrorStatus     off
+	      ERTFirstTimeCompliant   off
+	      IncludeFileDelimiter    "Auto"
+	      ERTCustomFileBanners    on
+	      SupportAbsoluteTime     on
+	      LogVarNameModifier      "rt_"
+	      MatFileLogging	      off
+	      MultiInstanceERTCode    off
+	      SupportNonFinite	      on
+	      SupportComplex	      on
+	      PurelyIntegerCode	      off
+	      SupportContinuousTime   off
+	      SupportNonInlinedSFcns  off
+	      SupportVariableSizeSignals off
+	      EnableShiftOperators    on
+	      ParenthesesLevel	      "Nominal"
+	      MATLABClassNameForMDSCustomization "linkfoundation.pjtgenerator.IdelinkCustomization"
+	      ModelStepFunctionPrototypeControlCompliant on
+	      CPPClassGenCompliant    off
+	      AutosarCompliant	      off
+	      GRTInterface	      off
+	      GenerateAllocFcn	      off
+	      GenerateASAP2	      off
+	      ExtMode		      off
+	      ExtModeTransport	      0
+	      ExtModeStaticAlloc      off
+	      ExtModeStaticAllocSize  1000000
+	      ExtModeTesting	      off
+	      ExtModeMexFile	      "TIC2000ExternalModeOpen"
+	      ExtModeIntrfLevel	      "Level2 - Open"
+	      InlinedParameterPlacement	"Hierarchical"
+	      TargetOS		      "BareBoardExample"
+	      MultiInstanceErrorCode  "Error"
+	      RateGroupingCode	      on
+	      RootIOFormat	      "Individual arguments"
+	      RTWCAPISignals	      off
+	      RTWCAPIParams	      off
+	      RTWCAPIStates	      off
+	      RTWCAPIRootIO	      off
+	      ERTSrcFileBannerTemplate "ert_code_template.cgt"
+	      ERTHdrFileBannerTemplate "ert_code_template.cgt"
+	      ERTDataSrcFileTemplate  "ert_code_template.cgt"
+	      ERTDataHdrFileTemplate  "ert_code_template.cgt"
+	      ERTCustomFileTemplate   "example_file_process.tlc"
+	      EnableDataOwnership     off
+	      SignalDisplayLevel      10
+	      ParamTuneLevel	      10
+	      GlobalDataDefinition    "Auto"
+	      DataDefinitionFile      "global.c"
+	      GlobalDataReference     "Auto"
+	      ERTFilePackagingFormat  "Modular"
+	      DataReferenceFile	      "global.h"
+	      PreserveExpressionOrder off
+	      PreserveIfCondition     off
+	      ConvertIfToSwitch	      off
+	      PreserveExternInFcnDecls on
+	      SuppressUnreachableDefaultCases off
+	      EnableUserReplacementTypes off
+	      Array {
+		Type			"Struct"
+		Dimension		1
+		MATStruct {
+		  double		  ""
+		  single		  ""
+		  int32			  ""
+		  int16			  ""
+		  int8			  ""
+		  uint32		  ""
+		  uint16		  ""
+		  uint8			  ""
+		  boolean		  ""
+		  int			  ""
+		  uint			  ""
+		  char			  ""
+		}
+		PropName		"ReplacementTypes"
+	      }
+	      MemSecPackage	      "--- None ---"
+	      MemSecDataConstants     "Default"
+	      MemSecDataIO	      "Default"
+	      MemSecDataInternal      "Default"
+	      MemSecDataParameters    "Default"
+	      MemSecFuncInitTerm      "Default"
+	      MemSecFuncExecute	      "Default"
+	      MemSecFuncSharedUtil    "Default"
+	      AdaptorName	      "Texas Instruments Code Composer Studio v4 (makefile generation only)"
+	      exportIDEObj	      on
+	      ideObjName	      "IDE_Obj"
+	      oldideObjName	      "IDE_Obj"
+	      ideObjTimeout	      10
+	      oldideObjTimeout	      10
+	      ideObjBuildTimeout      1000
+	      oldideObjBuildTimeout   1000
+	      TargetPrefTimeStamp     "01-Mar-2015 14:34:26"
+	      ProfileGenCode	      off
+	      profileBy		      "Tasks"
+	      ProfileNumSamples	      100
+	      InlineDSPBlks	      off
+	      projectOptions	      "Custom"
+	      debugCompilerOptions    " -g -D\"_DEBUG\""
+	      releaseCompilerOptions  " -o2"
+	      getCompilerOptions      off
+	      resetCompilerOptions    off
+	      getLinkerOptions	      off
+	      resetLinkerOptions      off
+	      systemStackSize	      512
+	      systemHeapSize	      512
+	      buildFormat	      "Makefile"
+	      buildAction	      "Build_and_execute"
+	      overrunNotificationMethod	"None"
+	      overrunNotificationFcn  "myfunction"
+	      oldoverrunNotificationFcn	"myfunction"
+	      configurePIL	      off
+	      configPILBlockAction    "Create_PIL_block_build_and_download"
+	      TargetResourceManagerActiveTab "0"
+	      DiagnosticActions	      "warning"
+	    }
+	    PropName		    "Components"
+	  }
+	}
+	hdlcoderui.hdlcc {
+	  $ObjectID		  19
+	  Version		  "1.13.0"
+	  Description		  "HDL Coder custom configuration component"
+	  Name			  "HDL Coder"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    1
+	    Cell		    ""
+	    PropName		    "HDLConfigFile"
+	  }
+	  HDLCActiveTab		  "0"
+	}
+	pjtgeneratorpkg.TargetHardwareResources {
+	  $ObjectID		  20
+	  Version		  "1.13.0"
+	  Description		  "Target Hardware Resources Component"
+	  Name			  "Target Hardware Resources"
+	  Array {
+	    Type		    "Struct"
+	    Dimension		    1
+	    MATStruct {
+	      Array {
+		Type			"Struct"
+		Dimension		1
+		MATStruct {
+		  deviceID		  "F28335"
+		  subFamily		  "2833x"
+		  cpuClockRateMHz	  [150.0]
+		  Array {
+		    Type		    "Struct"
+		    Dimension		    1
+		    MATStruct {
+		    numBanks		    [16.0]
+		    Array {
+		    Type		    "Struct"
+		    Dimension		    16
+		    MATStruct {
+		    Array {
+		    Type		    "Struct"
+		    Dimension		    1
+		    MATStruct {
+		    createHeap		    [0.0]
+		    heapSize		    [256.0]
+		    defineLabel		    [0.0]
+		    heapLabel		    "segment_name"
+		    }
+		    PropName		    "heap"
+		    }
+		    isremovable		    [0.0]
+		    iscontentsfixed	    [0.0]
+		    name		    "BEGINRAM"
+		    addr		    [0.0]
+		    size		    [2.0]
+		    contents		    "Code"
+		    space		    "Internal"
+		    }
+		    MATStruct {
+		    Array {
+		    Type		    "Struct"
+		    Dimension		    1
+		    MATStruct {
+		    createHeap		    [0.0]
+		    heapSize		    [256.0]
+		    defineLabel		    [0.0]
+		    heapLabel		    "segment_name"
+		    }
+		    PropName		    "heap"
+		    }
+		    isremovable		    [0.0]
+		    iscontentsfixed	    [0.0]
+		    name		    "RAMM0"
+		    addr		    [2.0]
+		    size		    [1022.0]
+		    contents		    "Code"
+		    space		    "Internal"
+		    }
+		    MATStruct {
+		    Array {
+		    Type		    "Struct"
+		    Dimension		    1
+		    MATStruct {
+		    createHeap		    [0.0]
+		    heapSize		    [256.0]
+		    defineLabel		    [0.0]
+		    heapLabel		    "segment_name"
+		    }
+		    PropName		    "heap"
+		    }
+		    isremovable		    [0.0]
+		    iscontentsfixed	    [0.0]
+		    name		    "RAML0L3"
+		    addr		    [32768.0]
+		    size		    [16384.0]
+		    contents		    "Data"
+		    space		    "Internal"
+		    }
+		    MATStruct {
+		    Array {
+		    Type		    "Struct"
+		    Dimension		    1
+		    MATStruct {
+		    createHeap		    [0.0]
+		    heapSize		    [256.0]
+		    defineLabel		    [0.0]
+		    heapLabel		    "segment_name"
+		    }
+		    PropName		    "heap"
+		    }
+		    isremovable		    [0.0]
+		    iscontentsfixed	    [0.0]
+		    name		    "OTP"
+		    addr		    [3671040.0]
+		    size		    [1024.0]
+		    contents		    "Code"
+		    space		    "Internal"
+		    }
+		    MATStruct {
+		    Array {
+		    Type		    "Struct"
+		    Dimension		    1
+		    MATStruct {
+		    createHeap		    [0.0]
+		    heapSize		    [256.0]
+		    defineLabel		    [0.0]
+		    heapLabel		    "segment_name"
+		    }
+		    PropName		    "heap"
+		    }
+		    isremovable		    [0.0]
+		    iscontentsfixed	    [0.0]
+		    name		    "FLASH"
+		    addr		    [3145728.0]
+		    size		    [262134.0]
+		    contents		    "Code & Data"
+		    space		    "Internal"
+		    }
+		    MATStruct {
+		    Array {
+		    Type		    "Struct"
+		    Dimension		    1
+		    MATStruct {
+		    createHeap		    [0.0]
+		    heapSize		    [256.0]
+		    defineLabel		    [0.0]
+		    heapLabel		    "segment_name"
+		    }
+		    PropName		    "heap"
+		    }
+		    isremovable		    [0.0]
+		    iscontentsfixed	    [0.0]
+		    name		    "BEGINFLASH"
+		    addr		    [3407862.0]
+		    size		    [2.0]
+		    contents		    "Code"
+		    space		    "Internal"
+		    }
+		    MATStruct {
+		    Array {
+		    Type		    "Struct"
+		    Dimension		    1
+		    MATStruct {
+		    createHeap		    [0.0]
+		    heapSize		    [256.0]
+		    defineLabel		    [0.0]
+		    heapLabel		    "segment_name"
+		    }
+		    PropName		    "heap"
+		    }
+		    isremovable		    [0.0]
+		    iscontentsfixed	    [0.0]
+		    name		    "CSM_PWL"
+		    addr		    [4161528.0]
+		    size		    [8.0]
+		    contents		    "Code"
+		    space		    "Internal"
+		    }
+		    MATStruct {
+		    Array {
+		    Type		    "Struct"
+		    Dimension		    1
+		    MATStruct {
+		    createHeap		    [0.0]
+		    heapSize		    [256.0]
+		    defineLabel		    [0.0]
+		    heapLabel		    "segment_name"
+		    }
+		    PropName		    "heap"
+		    }
+		    isremovable		    [0.0]
+		    iscontentsfixed	    [0.0]
+		    name		    "IQTABLES"
+		    addr		    [4186112.0]
+		    size		    [2896.0]
+		    contents		    "Code"
+		    space		    "Internal"
+		    }
+		    MATStruct {
+		    Array {
+		    Type		    "Struct"
+		    Dimension		    1
+		    MATStruct {
+		    createHeap		    [0.0]
+		    heapSize		    [256.0]
+		    defineLabel		    [0.0]
+		    heapLabel		    "segment_name"
+		    }
+		    PropName		    "heap"
+		    }
+		    isremovable		    [0.0]
+		    iscontentsfixed	    [0.0]
+		    name		    "IQTABLES2"
+		    addr		    [4189008.0]
+		    size		    [140.0]
+		    contents		    "Code"
+		    space		    "Internal"
+		    }
+		    MATStruct {
+		    Array {
+		    Type		    "Struct"
+		    Dimension		    1
+		    MATStruct {
+		    createHeap		    [0.0]
+		    heapSize		    [256.0]
+		    defineLabel		    [0.0]
+		    heapLabel		    "segment_name"
+		    }
+		    PropName		    "heap"
+		    }
+		    isremovable		    [0.0]
+		    iscontentsfixed	    [0.0]
+		    name		    "FPUTABLES"
+		    addr		    [4189148.0]
+		    size		    [1696.0]
+		    contents		    "Code"
+		    space		    "Internal"
+		    }
+		    MATStruct {
+		    Array {
+		    Type		    "Struct"
+		    Dimension		    1
+		    MATStruct {
+		    createHeap		    [0.0]
+		    heapSize		    [256.0]
+		    defineLabel		    [0.0]
+		    heapLabel		    "segment_name"
+		    }
+		    PropName		    "heap"
+		    }
+		    isremovable		    [0.0]
+		    iscontentsfixed	    [0.0]
+		    name		    "ROM"
+		    addr		    [4190844.0]
+		    size		    [3396.0]
+		    contents		    "Code"
+		    space		    "Internal"
+		    }
+		    MATStruct {
+		    Array {
+		    Type		    "Struct"
+		    Dimension		    1
+		    MATStruct {
+		    createHeap		    [0.0]
+		    heapSize		    [256.0]
+		    defineLabel		    [0.0]
+		    heapLabel		    "segment_name"
+		    }
+		    PropName		    "heap"
+		    }
+		    isremovable		    [0.0]
+		    iscontentsfixed	    [0.0]
+		    name		    "RESET"
+		    addr		    [4194240.0]
+		    size		    [2.0]
+		    contents		    "Code"
+		    space		    "Internal"
+		    }
+		    MATStruct {
+		    Array {
+		    Type		    "Struct"
+		    Dimension		    1
+		    MATStruct {
+		    createHeap		    [0.0]
+		    heapSize		    [256.0]
+		    defineLabel		    [0.0]
+		    heapLabel		    "segment_name"
+		    }
+		    PropName		    "heap"
+		    }
+		    isremovable		    [0.0]
+		    iscontentsfixed	    [0.0]
+		    name		    "VECTORS"
+		    addr		    [4194242.0]
+		    size		    [62.0]
+		    contents		    "Code"
+		    space		    "Internal"
+		    }
+		    MATStruct {
+		    Array {
+		    Type		    "Struct"
+		    Dimension		    1
+		    MATStruct {
+		    createHeap		    [0.0]
+		    heapSize		    [256.0]
+		    defineLabel		    [0.0]
+		    heapLabel		    "segment_name"
+		    }
+		    PropName		    "heap"
+		    }
+		    isremovable		    [0.0]
+		    iscontentsfixed	    [0.0]
+		    name		    "RAMM1"
+		    addr		    [1024.0]
+		    size		    [1024.0]
+		    contents		    "Data"
+		    space		    "Internal"
+		    }
+		    MATStruct {
+		    Array {
+		    Type		    "Struct"
+		    Dimension		    1
+		    MATStruct {
+		    createHeap		    [0.0]
+		    heapSize		    [256.0]
+		    defineLabel		    [0.0]
+		    heapLabel		    "segment_name"
+		    }
+		    PropName		    "heap"
+		    }
+		    isremovable		    [0.0]
+		    iscontentsfixed	    [0.0]
+		    name		    "RAML4L7"
+		    addr		    [49152.0]
+		    size		    [16384.0]
+		    contents		    "Code"
+		    space		    "Internal"
+		    }
+		    MATStruct {
+		    Array {
+		    Type		    "Struct"
+		    Dimension		    1
+		    MATStruct {
+		    createHeap		    [0.0]
+		    heapSize		    [256.0]
+		    defineLabel		    [0.0]
+		    heapLabel		    "segment_name"
+		    }
+		    PropName		    "heap"
+		    }
+		    isremovable		    [0.0]
+		    iscontentsfixed	    [0.0]
+		    name		    "ADC_CAL"
+		    addr		    [3670144.0]
+		    size		    [9.0]
+		    contents		    "Code"
+		    space		    "Internal"
+		    }
+		    PropName		    "bank"
+		    }
+		    numCacheLvl		    [0.0]
+		    }
+		    PropName		    "intMem"
+		  }
+		  codegenhookpoint	  "C2000"
+		  Array {
+		    Type		    "Cell"
+		    Dimension		    1
+		    Cell		    "$(MATLAB_ROOT)\\toolbox\\idelink\\extensions\\ticcs\\rtlib\\IQmath_fpu32.lib"
+		    PropName		    "lib_le"
+		  }
+		  Array {
+		    Type		    "Cell"
+		    Dimension		    0
+		    PropName		    "lib_be"
+		  }
+		  Array {
+		    Type		    "Cell"
+		    Dimension		    1
+		    Cell		    "$(MATLAB_ROOT)\\toolbox\\idelink\\extensions\\ticcs\\inc"
+		    PropName		    "inc"
+		  }
+		  Array {
+		    Type		    "Cell"
+		    Dimension		    12
+		    Cell		    "$(MATLAB_ROOT)\\toolbox\\idelink\\extensions\\ticcs\\src\\DSP2833x_MemCopy.c"
+		    Cell		    "$(MATLAB_ROOT)\\toolbox\\idelink\\extensions\\ticcs\\src\\DSP2833x_CpuTimers.c"
+		    Cell		    "$(MATLAB_ROOT)\\toolbox\\idelink\\extensions\\ticcs\\src\\DSP2833x_DefaultIsr.c"
+		    Cell		    "$(MATLAB_ROOT)\\toolbox\\idelink\\extensions\\ticcs\\src\\DSP2833x_GlobalVariableDefs.c"
+		    Cell		    "$(MATLAB_ROOT)\\toolbox\\idelink\\extensions\\ticcs\\src\\DSP2833x_PieCtrl.c"
+		    Cell		    "$(MATLAB_ROOT)\\toolbox\\idelink\\extensions\\ticcs\\src\\DSP2833x_PieVect.c"
+		    Cell		    "$(MATLAB_ROOT)\\toolbox\\idelink\\extensions\\ticcs\\src\\DSP2833x_SysCtrl.c"
+		    Cell		    "$(MATLAB_ROOT)\\toolbox\\idelink\\extensions\\ticcs\\src\\DSP2833x_usDelay.asm"
+		    Cell		    "$(MATLAB_ROOT)\\toolbox\\idelink\\extensions\\ticcs\\src\\DSP2833x_CodeStartBranch.asm"
+		    Cell		    "$(MATLAB_ROOT)\\toolbox\\idelink\\extensions\\ticcs\\src\\DSP2833x_ADC_cal.asm"
+		    Cell		    "$(MATLAB_ROOT)\\toolbox\\idelink\\extensions\\ticcs\\src\\ti_nonfinite.c"
+		    Cell		    "$(MATLAB_ROOT)\\toolbox\\idelink\\extensions\\ticcs\\src\\DSP2833x_DMA.c"
+		    PropName		    "src"
+		  }
+		  Array {
+		    Type		    "Cell"
+		    Dimension		    12
+		    Cell		    [0.0]
+		    Cell		    [0.0]
+		    Cell		    [0.0]
+		    Cell		    [0.0]
+		    Cell		    [0.0]
+		    Cell		    [0.0]
+		    Cell		    [0.0]
+		    Cell		    [0.0]
+		    Cell		    [0.0]
+		    Cell		    [0.0]
+		    Cell		    [0.0]
+		    Cell		    [0.0]
+		    PropName		    "copysrc"
+		  }
+		  Array {
+		    Type		    "Cell"
+		    Dimension		    0
+		    PropName		    "preproc"
+		  }
+		  Array {
+		    Type		    "Cell"
+		    Dimension		    1
+		    Cell		    "-l\"rts2800_fpu32.lib\""
+		    PropName		    "linkeroptions"
+		  }
+		  Array {
+		    Type		    "Cell"
+		    Dimension		    1
+		    Cell		    "-ml"
+		    PropName		    "compileroptions"
+		  }
+		  mvSwitch		  "-v28 --float_support=fpu32"
+		  numSections		  [23.0]
+		  Array {
+		    Type		    "Cell"
+		    Dimension		    23
+		    Cell		    ".text"
+		    Cell		    ".switch"
+		    Cell		    ".bss"
+		    Cell		    ".ebss"
+		    Cell		    ".far"
+		    Cell		    ".cinit"
+		    Cell		    ".pinit"
+		    Cell		    ".const"
+		    Cell		    ".econst"
+		    Cell		    ".reset"
+		    Cell		    ".data"
+		    Cell		    ".cio"
+		    Cell		    ".sysmem"
+		    Cell		    ".esysmem"
+		    Cell		    ".stack"
+		    Cell		    ".rtdx_text"
+		    Cell		    ".rtdx_data"
+		    Cell		    "IQmath"
+		    Cell		    "codestart"
+		    Cell		    "csmpasswds"
+		    Cell		    "csm_rsvd"
+		    Cell		    "ramfuncs"
+		    Cell		    ".adc_cal"
+		    PropName		    "section"
+		  }
+		  Array {
+		    Type		    "Cell"
+		    Dimension		    61
+		    Cell		    "C6201"
+		    Cell		    "C6202"
+		    Cell		    "C6203"
+		    Cell		    "C6204"
+		    Cell		    "C6205"
+		    Cell		    "C6701"
+		    Cell		    "C6211"
+		    Cell		    "C6711"
+		    Cell		    "C6712"
+		    Cell		    "C6713"
+		    Cell		    "C6722"
+		    Cell		    "C6726"
+		    Cell		    "C6727"
+		    Cell		    "C6410"
+		    Cell		    "C6411"
+		    Cell		    "C6412"
+		    Cell		    "C6413"
+		    Cell		    "C6414"
+		    Cell		    "C6415"
+		    Cell		    "C6416"
+		    Cell		    "C6418"
+		    Cell		    "C6455"
+		    Cell		    "TCI6482"
+		    Cell		    "DM6431"
+		    Cell		    "DM6433"
+		    Cell		    "DM6435"
+		    Cell		    "DM6437"
+		    Cell		    "DM640"
+		    Cell		    "DM641"
+		    Cell		    "DM642"
+		    Cell		    "DM643"
+		    Cell		    "C5501"
+		    Cell		    "C5502"
+		    Cell		    "C5503"
+		    Cell		    "C5507"
+		    Cell		    "C5509"
+		    Cell		    "C5509A"
+		    Cell		    "C5510PG1_0"
+		    Cell		    "C5510PG1_2"
+		    Cell		    "C5510PG2_0"
+		    Cell		    "C5510PG2_1"
+		    Cell		    "C5510PG2_2"
+		    Cell		    "C2810"
+		    Cell		    "C2811"
+		    Cell		    "C2812"
+		    Cell		    "F2810"
+		    Cell		    "F2811"
+		    Cell		    "F2812"
+		    Cell		    "R2811"
+		    Cell		    "R2812"
+		    Cell		    "F2801"
+		    Cell		    "F2802"
+		    Cell		    "F2806"
+		    Cell		    "F2808"
+		    Cell		    "F2809"
+		    Cell		    "F28015"
+		    Cell		    "F28016"
+		    Cell		    "F28044"
+		    Cell		    "F28332"
+		    Cell		    "F28334"
+		    Cell		    "F28335"
+		    PropName		    "allnames"
+		  }
+		  numRTOS		  [1.0]
+		  Array {
+		    Type		    "Cell"
+		    Dimension		    1
+		    Array {
+		    Type		    "Struct"
+		    Dimension		    1
+		    MATStruct {
+		    name		    "None"
+		    label		    "None"
+		    }
+		    PropName		    "Cell"
+		    }
+		    PropName		    "RTOS"
+		  }
+		  Array {
+		    Type		    "Struct"
+		    Dimension		    1
+		    MATStruct {
+		    timer		    []
+		    timerprescaler	    []
+		    }
+		    PropName		    "scheduler"
+		  }
+		  defaultSysStackSize	  [512.0]
+		  realtimesupport	  "on"
+		  isBuiltIn		  [1]
+		  Array {
+		    Type		    "Cell"
+		    Dimension		    23
+		    Cell		    ""
+		    Cell		    ""
+		    Cell		    ""
+		    Cell		    ""
+		    Cell		    ""
+		    Cell		    ""
+		    Cell		    ""
+		    Cell		    ""
+		    Cell		    ""
+		    Cell		    ""
+		    Cell		    ""
+		    Cell		    ""
+		    Cell		    ""
+		    Cell		    ""
+		    Cell		    ""
+		    Cell		    ""
+		    Cell		    ""
+		    Cell		    ""
+		    Cell		    ""
+		    Cell		    ""
+		    Cell		    ""
+		    Cell		    ""
+		    Cell		    ""
+		    PropName		    "attributes"
+		  }
+		  Array {
+		    Type		    "Cell"
+		    Dimension		    23
+		    Cell		    ""
+		    Cell		    ""
+		    Cell		    ""
+		    Cell		    ""
+		    Cell		    ""
+		    Cell		    ""
+		    Cell		    ""
+		    Cell		    ""
+		    Cell		    ""
+		    Cell		    ""
+		    Cell		    ""
+		    Cell		    ""
+		    Cell		    ""
+		    Cell		    ""
+		    Cell		    ""
+		    Cell		    ""
+		    Cell		    ""
+		    Cell		    ""
+		    Cell		    ""
+		    Cell		    ""
+		    Cell		    ""
+		    Cell		    ""
+		    Cell		    ""
+		    PropName		    "commands"
+		  }
+		  Array {
+		    Type		    "Cell"
+		    Dimension		    23
+		    Cell		    "C code"
+		    Cell		    "Jump tables"
+		    Cell		    "Global data"
+		    Cell		    "Far global data"
+		    Cell		    "Far variables"
+		    Cell		    "Initialized variables"
+		    Cell		    "Global object constructors"
+		    Cell		    "Constants"
+		    Cell		    "Far constants"
+		    Cell		    "Reset"
+		    Cell		    "Program data"
+		    Cell		    "Standard I/O buffers"
+		    Cell		    "Memory for malloc functions"
+		    Cell		    "Memory for far malloc functions"
+		    Cell		    "System stack"
+		    Cell		    "RTDX text"
+		    Cell		    "RTDX data"
+		    Cell		    "IQmath code"
+		    Cell		    "Code start"
+		    Cell		    "Code security module passwords"
+		    Cell		    "Code security module reserved"
+		    Cell		    "Load out of FLASH, run out of RAM"
+		    Cell		    "ADC calibration"
+		    PropName		    "description"
+		  }
+		  Array {
+		    Type		    "Cell"
+		    Dimension		    23
+		    Cell		    "Code"
+		    Cell		    "Code"
+		    Cell		    "Data"
+		    Cell		    "Data"
+		    Cell		    "Data"
+		    Cell		    "Code"
+		    Cell		    "Code"
+		    Cell		    "Data"
+		    Cell		    "Data"
+		    Cell		    "Code"
+		    Cell		    "Data"
+		    Cell		    "Data"
+		    Cell		    "Data"
+		    Cell		    "Data"
+		    Cell		    "Data"
+		    Cell		    "Code"
+		    Cell		    "Data"
+		    Cell		    "Code"
+		    Cell		    "Code"
+		    Cell		    "Code"
+		    Cell		    "Code"
+		    Cell		    "Code"
+		    Cell		    "Code"
+		    PropName		    "contents"
+		  }
+		  Array {
+		    Type		    "Cell"
+		    Dimension		    23
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    1
+		    Cell		    "RAML4L7"
+		    PropName		    "Cell"
+		    }
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    1
+		    Cell		    "RAML4L7"
+		    PropName		    "Cell"
+		    }
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    1
+		    Cell		    "RAML0L3"
+		    PropName		    "Cell"
+		    }
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    1
+		    Cell		    "RAML0L3"
+		    PropName		    "Cell"
+		    }
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    1
+		    Cell		    "RAML0L3"
+		    PropName		    "Cell"
+		    }
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    1
+		    Cell		    "RAML4L7"
+		    PropName		    "Cell"
+		    }
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    1
+		    Cell		    "RAML4L7"
+		    PropName		    "Cell"
+		    }
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    1
+		    Cell		    "RAML0L3"
+		    PropName		    "Cell"
+		    }
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    1
+		    Cell		    "RAML0L3"
+		    PropName		    "Cell"
+		    }
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    1
+		    Cell		    "RESET"
+		    PropName		    "Cell"
+		    }
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    1
+		    Cell		    "RAML0L3"
+		    PropName		    "Cell"
+		    }
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    1
+		    Cell		    "RAML0L3"
+		    PropName		    "Cell"
+		    }
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    1
+		    Cell		    "RAML0L3"
+		    PropName		    "Cell"
+		    }
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    1
+		    Cell		    "RAML0L3"
+		    PropName		    "Cell"
+		    }
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    1
+		    Cell		    "RAMM1"
+		    PropName		    "Cell"
+		    }
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    1
+		    Cell		    "RAML4L7"
+		    PropName		    "Cell"
+		    }
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    1
+		    Cell		    "RAML0L3"
+		    PropName		    "Cell"
+		    }
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    1
+		    Cell		    "RAML4L7"
+		    PropName		    "Cell"
+		    }
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    1
+		    Cell		    "BEGINRAM"
+		    PropName		    "Cell"
+		    }
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    1
+		    Cell		    "CSM_PWL"
+		    PropName		    "Cell"
+		    }
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    1
+		    Cell		    "RAMM0"
+		    PropName		    "Cell"
+		    }
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    1
+		    Cell		    "RAML4L7"
+		    PropName		    "Cell"
+		    }
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    1
+		    Cell		    "ADC_CAL"
+		    PropName		    "Cell"
+		    }
+		    PropName		    "placement"
+		  }
+		}
+		PropName		"chipInfo"
+	      }
+	      Array {
+		Type			"Struct"
+		Dimension		1
+		MATStruct {
+		  numBanks		  [18.0]
+		  Array {
+		    Type		    "Struct"
+		    Dimension		    18
+		    MATStruct {
+		    Array {
+		    Type		    "Struct"
+		    Dimension		    1
+		    MATStruct {
+		    createHeap		    [0.0]
+		    heapSize		    [256.0]
+		    defineLabel		    [0.0]
+		    heapLabel		    "segment_name"
+		    }
+		    PropName		    "heap"
+		    }
+		    isremovable		    [0.0]
+		    iscontentsfixed	    [0.0]
+		    name		    "BEGINRAM"
+		    addr		    [0.0]
+		    size		    [2.0]
+		    contents		    "Code"
+		    space		    "Internal"
+		    }
+		    MATStruct {
+		    Array {
+		    Type		    "Struct"
+		    Dimension		    1
+		    MATStruct {
+		    createHeap		    [0.0]
+		    heapSize		    [256.0]
+		    defineLabel		    [0.0]
+		    heapLabel		    "segment_name"
+		    }
+		    PropName		    "heap"
+		    }
+		    isremovable		    [0.0]
+		    iscontentsfixed	    [0.0]
+		    name		    "RAMM0"
+		    addr		    [2.0]
+		    size		    [1022.0]
+		    contents		    "Code"
+		    space		    "Internal"
+		    }
+		    MATStruct {
+		    Array {
+		    Type		    "Struct"
+		    Dimension		    1
+		    MATStruct {
+		    createHeap		    [0.0]
+		    heapSize		    [256.0]
+		    defineLabel		    [0.0]
+		    heapLabel		    "segment_name"
+		    }
+		    PropName		    "heap"
+		    }
+		    isremovable		    [0.0]
+		    iscontentsfixed	    [0.0]
+		    name		    "RAML0L3"
+		    addr		    [32768.0]
+		    size		    [16384.0]
+		    contents		    "Data"
+		    space		    "Internal"
+		    }
+		    MATStruct {
+		    Array {
+		    Type		    "Struct"
+		    Dimension		    1
+		    MATStruct {
+		    createHeap		    [0.0]
+		    heapSize		    [256.0]
+		    defineLabel		    [0.0]
+		    heapLabel		    "segment_name"
+		    }
+		    PropName		    "heap"
+		    }
+		    isremovable		    [0.0]
+		    iscontentsfixed	    [0.0]
+		    name		    "OTP"
+		    addr		    [3671040.0]
+		    size		    [1024.0]
+		    contents		    "Code"
+		    space		    "Internal"
+		    }
+		    MATStruct {
+		    Array {
+		    Type		    "Struct"
+		    Dimension		    1
+		    MATStruct {
+		    createHeap		    [0.0]
+		    heapSize		    [256.0]
+		    defineLabel		    [0.0]
+		    heapLabel		    "segment_name"
+		    }
+		    PropName		    "heap"
+		    }
+		    isremovable		    [0.0]
+		    iscontentsfixed	    [0.0]
+		    name		    "FLASH"
+		    addr		    [3145728.0]
+		    size		    [262134.0]
+		    contents		    "Code & Data"
+		    space		    "Internal"
+		    }
+		    MATStruct {
+		    Array {
+		    Type		    "Struct"
+		    Dimension		    1
+		    MATStruct {
+		    createHeap		    [0.0]
+		    heapSize		    [256.0]
+		    defineLabel		    [0.0]
+		    heapLabel		    "segment_name"
+		    }
+		    PropName		    "heap"
+		    }
+		    isremovable		    [0.0]
+		    iscontentsfixed	    [0.0]
+		    name		    "BEGINFLASH"
+		    addr		    [3407862.0]
+		    size		    [2.0]
+		    contents		    "Code"
+		    space		    "Internal"
+		    }
+		    MATStruct {
+		    Array {
+		    Type		    "Struct"
+		    Dimension		    1
+		    MATStruct {
+		    createHeap		    [0.0]
+		    heapSize		    [256.0]
+		    defineLabel		    [0.0]
+		    heapLabel		    "segment_name"
+		    }
+		    PropName		    "heap"
+		    }
+		    isremovable		    [0.0]
+		    iscontentsfixed	    [0.0]
+		    name		    "CSM_PWL"
+		    addr		    [4161528.0]
+		    size		    [8.0]
+		    contents		    "Code"
+		    space		    "Internal"
+		    }
+		    MATStruct {
+		    Array {
+		    Type		    "Struct"
+		    Dimension		    1
+		    MATStruct {
+		    createHeap		    [0.0]
+		    heapSize		    [256.0]
+		    defineLabel		    [0.0]
+		    heapLabel		    "segment_name"
+		    }
+		    PropName		    "heap"
+		    }
+		    isremovable		    [0.0]
+		    iscontentsfixed	    [0.0]
+		    name		    "IQTABLES"
+		    addr		    [4186112.0]
+		    size		    [2896.0]
+		    contents		    "Code"
+		    space		    "Internal"
+		    }
+		    MATStruct {
+		    Array {
+		    Type		    "Struct"
+		    Dimension		    1
+		    MATStruct {
+		    createHeap		    [0.0]
+		    heapSize		    [256.0]
+		    defineLabel		    [0.0]
+		    heapLabel		    "segment_name"
+		    }
+		    PropName		    "heap"
+		    }
+		    isremovable		    [0.0]
+		    iscontentsfixed	    [0.0]
+		    name		    "IQTABLES2"
+		    addr		    [4189008.0]
+		    size		    [140.0]
+		    contents		    "Code"
+		    space		    "Internal"
+		    }
+		    MATStruct {
+		    Array {
+		    Type		    "Struct"
+		    Dimension		    1
+		    MATStruct {
+		    createHeap		    [0.0]
+		    heapSize		    [256.0]
+		    defineLabel		    [0.0]
+		    heapLabel		    "segment_name"
+		    }
+		    PropName		    "heap"
+		    }
+		    isremovable		    [0.0]
+		    iscontentsfixed	    [0.0]
+		    name		    "FPUTABLES"
+		    addr		    [4189148.0]
+		    size		    [1696.0]
+		    contents		    "Code"
+		    space		    "Internal"
+		    }
+		    MATStruct {
+		    Array {
+		    Type		    "Struct"
+		    Dimension		    1
+		    MATStruct {
+		    createHeap		    [0.0]
+		    heapSize		    [256.0]
+		    defineLabel		    [0.0]
+		    heapLabel		    "segment_name"
+		    }
+		    PropName		    "heap"
+		    }
+		    isremovable		    [0.0]
+		    iscontentsfixed	    [0.0]
+		    name		    "ROM"
+		    addr		    [4190844.0]
+		    size		    [3396.0]
+		    contents		    "Code"
+		    space		    "Internal"
+		    }
+		    MATStruct {
+		    Array {
+		    Type		    "Struct"
+		    Dimension		    1
+		    MATStruct {
+		    createHeap		    [0.0]
+		    heapSize		    [256.0]
+		    defineLabel		    [0.0]
+		    heapLabel		    "segment_name"
+		    }
+		    PropName		    "heap"
+		    }
+		    isremovable		    [0.0]
+		    iscontentsfixed	    [0.0]
+		    name		    "RESET"
+		    addr		    [4194240.0]
+		    size		    [2.0]
+		    contents		    "Code"
+		    space		    "Internal"
+		    }
+		    MATStruct {
+		    Array {
+		    Type		    "Struct"
+		    Dimension		    1
+		    MATStruct {
+		    createHeap		    [0.0]
+		    heapSize		    [256.0]
+		    defineLabel		    [0.0]
+		    heapLabel		    "segment_name"
+		    }
+		    PropName		    "heap"
+		    }
+		    isremovable		    [0.0]
+		    iscontentsfixed	    [0.0]
+		    name		    "VECTORS"
+		    addr		    [4194242.0]
+		    size		    [62.0]
+		    contents		    "Code"
+		    space		    "Internal"
+		    }
+		    MATStruct {
+		    Array {
+		    Type		    "Struct"
+		    Dimension		    1
+		    MATStruct {
+		    createHeap		    [0.0]
+		    heapSize		    [256.0]
+		    defineLabel		    [0.0]
+		    heapLabel		    "segment_name"
+		    }
+		    PropName		    "heap"
+		    }
+		    isremovable		    [0.0]
+		    iscontentsfixed	    [0.0]
+		    name		    "RAMM1"
+		    addr		    [1024.0]
+		    size		    [1024.0]
+		    contents		    "Data"
+		    space		    "Internal"
+		    }
+		    MATStruct {
+		    Array {
+		    Type		    "Struct"
+		    Dimension		    1
+		    MATStruct {
+		    createHeap		    [0.0]
+		    heapSize		    [256.0]
+		    defineLabel		    [0.0]
+		    heapLabel		    "segment_name"
+		    }
+		    PropName		    "heap"
+		    }
+		    isremovable		    [0.0]
+		    iscontentsfixed	    [0.0]
+		    name		    "RAML4L7"
+		    addr		    [49152.0]
+		    size		    [16384.0]
+		    contents		    "Code"
+		    space		    "Internal"
+		    }
+		    MATStruct {
+		    Array {
+		    Type		    "Struct"
+		    Dimension		    1
+		    MATStruct {
+		    createHeap		    [0.0]
+		    heapSize		    [256.0]
+		    defineLabel		    [0.0]
+		    heapLabel		    "segment_name"
+		    }
+		    PropName		    "heap"
+		    }
+		    isremovable		    [0.0]
+		    iscontentsfixed	    [0.0]
+		    name		    "ADC_CAL"
+		    addr		    [3670144.0]
+		    size		    [9.0]
+		    contents		    "Code"
+		    space		    "Internal"
+		    }
+		    MATStruct {
+		    Array {
+		    Type		    "Struct"
+		    Dimension		    1
+		    MATStruct {
+		    createHeap		    [0.0]
+		    heapSize		    [1000.0]
+		    defineLabel		    [0.0]
+		    heapLabel		    "segment_name"
+		    }
+		    PropName		    "heap"
+		    }
+		    isremovable		    [1.0]
+		    iscontentsfixed	    [0.0]
+		    name		    "ZONE7P"
+		    addr		    [2097152.0]
+		    size		    [65536.0]
+		    contents		    "Code"
+		    space		    "EMIF CE0"
+		    }
+		    MATStruct {
+		    Array {
+		    Type		    "Struct"
+		    Dimension		    1
+		    MATStruct {
+		    createHeap		    [0.0]
+		    heapSize		    [1000.0]
+		    defineLabel		    [0.0]
+		    heapLabel		    "segment_name"
+		    }
+		    PropName		    "heap"
+		    }
+		    isremovable		    [1.0]
+		    iscontentsfixed	    [0.0]
+		    name		    "ZONE7D"
+		    addr		    [2162688.0]
+		    size		    [65536.0]
+		    contents		    "Data"
+		    space		    "EMIF CE0"
+		    }
+		    PropName		    "bank"
+		  }
+		  Array {
+		    Type		    "Struct"
+		    Dimension		    1
+		    MATStruct {
+		    Array {
+		    Type		    "Struct"
+		    Dimension		    23
+		    MATStruct {
+		    name		    ".text"
+		    description		    "C code"
+		    contents		    "Code"
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    1
+		    Cell		    "RAML4L7"
+		    PropName		    "placement"
+		    }
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    1
+		    Cell		    ""
+		    PropName		    "attributes"
+		    }
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    1
+		    Cell		    ""
+		    PropName		    "commands"
+		    }
+		    }
+		    MATStruct {
+		    name		    ".switch"
+		    description		    "Jump tables"
+		    contents		    "Code"
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    1
+		    Cell		    "RAML4L7"
+		    PropName		    "placement"
+		    }
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    1
+		    Cell		    ""
+		    PropName		    "attributes"
+		    }
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    1
+		    Cell		    ""
+		    PropName		    "commands"
+		    }
+		    }
+		    MATStruct {
+		    name		    ".bss"
+		    description		    "Global data"
+		    contents		    "Data"
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    1
+		    Cell		    "RAML0L3"
+		    PropName		    "placement"
+		    }
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    1
+		    Cell		    ""
+		    PropName		    "attributes"
+		    }
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    1
+		    Cell		    ""
+		    PropName		    "commands"
+		    }
+		    }
+		    MATStruct {
+		    name		    ".ebss"
+		    description		    "Far global data"
+		    contents		    "Data"
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    1
+		    Cell		    "RAML0L3"
+		    PropName		    "placement"
+		    }
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    1
+		    Cell		    ""
+		    PropName		    "attributes"
+		    }
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    1
+		    Cell		    ""
+		    PropName		    "commands"
+		    }
+		    }
+		    MATStruct {
+		    name		    ".far"
+		    description		    "Far variables"
+		    contents		    "Data"
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    1
+		    Cell		    "RAML0L3"
+		    PropName		    "placement"
+		    }
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    1
+		    Cell		    ""
+		    PropName		    "attributes"
+		    }
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    1
+		    Cell		    ""
+		    PropName		    "commands"
+		    }
+		    }
+		    MATStruct {
+		    name		    ".cinit"
+		    description		    "Initialized variables"
+		    contents		    "Code"
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    1
+		    Cell		    "RAML4L7"
+		    PropName		    "placement"
+		    }
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    1
+		    Cell		    ""
+		    PropName		    "attributes"
+		    }
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    1
+		    Cell		    ""
+		    PropName		    "commands"
+		    }
+		    }
+		    MATStruct {
+		    name		    ".pinit"
+		    description		    "Global object constructors"
+		    contents		    "Code"
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    1
+		    Cell		    "RAML4L7"
+		    PropName		    "placement"
+		    }
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    1
+		    Cell		    ""
+		    PropName		    "attributes"
+		    }
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    1
+		    Cell		    ""
+		    PropName		    "commands"
+		    }
+		    }
+		    MATStruct {
+		    name		    ".const"
+		    description		    "Constants"
+		    contents		    "Data"
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    1
+		    Cell		    "RAML0L3"
+		    PropName		    "placement"
+		    }
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    1
+		    Cell		    ""
+		    PropName		    "attributes"
+		    }
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    1
+		    Cell		    ""
+		    PropName		    "commands"
+		    }
+		    }
+		    MATStruct {
+		    name		    ".econst"
+		    description		    "Far constants"
+		    contents		    "Data"
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    1
+		    Cell		    "RAML0L3"
+		    PropName		    "placement"
+		    }
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    1
+		    Cell		    ""
+		    PropName		    "attributes"
+		    }
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    1
+		    Cell		    ""
+		    PropName		    "commands"
+		    }
+		    }
+		    MATStruct {
+		    name		    ".reset"
+		    description		    "Reset"
+		    contents		    "Code"
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    1
+		    Cell		    "RESET"
+		    PropName		    "placement"
+		    }
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    1
+		    Cell		    ""
+		    PropName		    "attributes"
+		    }
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    1
+		    Cell		    ""
+		    PropName		    "commands"
+		    }
+		    }
+		    MATStruct {
+		    name		    ".data"
+		    description		    "Program data"
+		    contents		    "Data"
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    1
+		    Cell		    "RAML0L3"
+		    PropName		    "placement"
+		    }
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    1
+		    Cell		    ""
+		    PropName		    "attributes"
+		    }
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    1
+		    Cell		    ""
+		    PropName		    "commands"
+		    }
+		    }
+		    MATStruct {
+		    name		    ".cio"
+		    description		    "Standard I/O buffers"
+		    contents		    "Data"
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    1
+		    Cell		    "RAML0L3"
+		    PropName		    "placement"
+		    }
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    1
+		    Cell		    ""
+		    PropName		    "attributes"
+		    }
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    1
+		    Cell		    ""
+		    PropName		    "commands"
+		    }
+		    }
+		    MATStruct {
+		    name		    ".sysmem"
+		    description		    "Memory for malloc functions"
+		    contents		    "Data"
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    1
+		    Cell		    "RAML0L3"
+		    PropName		    "placement"
+		    }
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    1
+		    Cell		    ""
+		    PropName		    "attributes"
+		    }
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    1
+		    Cell		    ""
+		    PropName		    "commands"
+		    }
+		    }
+		    MATStruct {
+		    name		    ".esysmem"
+		    description		    "Memory for far malloc functions"
+		    contents		    "Data"
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    1
+		    Cell		    "RAML0L3"
+		    PropName		    "placement"
+		    }
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    1
+		    Cell		    ""
+		    PropName		    "attributes"
+		    }
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    1
+		    Cell		    ""
+		    PropName		    "commands"
+		    }
+		    }
+		    MATStruct {
+		    name		    ".stack"
+		    description		    "System stack"
+		    contents		    "Data"
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    1
+		    Cell		    "RAMM1"
+		    PropName		    "placement"
+		    }
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    1
+		    Cell		    ""
+		    PropName		    "attributes"
+		    }
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    1
+		    Cell		    ""
+		    PropName		    "commands"
+		    }
+		    }
+		    MATStruct {
+		    name		    ".rtdx_text"
+		    description		    "RTDX text"
+		    contents		    "Code"
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    1
+		    Cell		    "RAML4L7"
+		    PropName		    "placement"
+		    }
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    1
+		    Cell		    ""
+		    PropName		    "attributes"
+		    }
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    1
+		    Cell		    ""
+		    PropName		    "commands"
+		    }
+		    }
+		    MATStruct {
+		    name		    ".rtdx_data"
+		    description		    "RTDX data"
+		    contents		    "Data"
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    1
+		    Cell		    "RAML0L3"
+		    PropName		    "placement"
+		    }
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    1
+		    Cell		    ""
+		    PropName		    "attributes"
+		    }
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    1
+		    Cell		    ""
+		    PropName		    "commands"
+		    }
+		    }
+		    MATStruct {
+		    name		    "IQmath"
+		    description		    "IQmath code"
+		    contents		    "Code"
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    1
+		    Cell		    "RAML4L7"
+		    PropName		    "placement"
+		    }
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    1
+		    Cell		    ""
+		    PropName		    "attributes"
+		    }
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    1
+		    Cell		    ""
+		    PropName		    "commands"
+		    }
+		    }
+		    MATStruct {
+		    name		    "codestart"
+		    description		    "Code start"
+		    contents		    "Code"
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    1
+		    Cell		    "BEGINRAM"
+		    PropName		    "placement"
+		    }
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    1
+		    Cell		    ""
+		    PropName		    "attributes"
+		    }
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    1
+		    Cell		    ""
+		    PropName		    "commands"
+		    }
+		    }
+		    MATStruct {
+		    name		    "csmpasswds"
+		    description		    "Code security module passwords"
+		    contents		    "Code"
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    1
+		    Cell		    "CSM_PWL"
+		    PropName		    "placement"
+		    }
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    1
+		    Cell		    ""
+		    PropName		    "attributes"
+		    }
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    1
+		    Cell		    ""
+		    PropName		    "commands"
+		    }
+		    }
+		    MATStruct {
+		    name		    "csm_rsvd"
+		    description		    "Code security module reserved"
+		    contents		    "Code"
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    1
+		    Cell		    "RAMM0"
+		    PropName		    "placement"
+		    }
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    1
+		    Cell		    ""
+		    PropName		    "attributes"
+		    }
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    1
+		    Cell		    ""
+		    PropName		    "commands"
+		    }
+		    }
+		    MATStruct {
+		    name		    "ramfuncs"
+		    description		    "Load out of FLASH, run out of RAM"
+		    contents		    "Code"
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    1
+		    Cell		    "RAML4L7"
+		    PropName		    "placement"
+		    }
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    1
+		    Cell		    ""
+		    PropName		    "attributes"
+		    }
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    1
+		    Cell		    ""
+		    PropName		    "commands"
+		    }
+		    }
+		    MATStruct {
+		    name		    ".adc_cal"
+		    description		    "ADC calibration"
+		    contents		    "Code"
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    1
+		    Cell		    "ADC_CAL"
+		    PropName		    "placement"
+		    }
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    1
+		    Cell		    ""
+		    PropName		    "attributes"
+		    }
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    1
+		    Cell		    ""
+		    PropName		    "commands"
+		    }
+		    }
+		    PropName		    "section"
+		    }
+		    numSections		    [23.0]
+		    }
+		    PropName		    "compiler"
+		  }
+		  Array {
+		    Type		    "Struct"
+		    Dimension		    1
+		    MATStruct {
+		    Array {
+		    Type		    "Struct"
+		    Dimension		    10
+		    MATStruct {
+		    name		    ".args"
+		    description		    "Argument buffer"
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    1
+		    Cell		    "IDRAM"
+		    PropName		    "placement"
+		    }
+		    contents		    "Data"
+		    }
+		    MATStruct {
+		    name		    ".gblinit"
+		    description		    "DSP/BIOS initialization tables"
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    1
+		    Cell		    "IDRAM"
+		    PropName		    "placement"
+		    }
+		    contents		    "Data"
+		    }
+		    MATStruct {
+		    name		    ".trcdata"
+		    description		    "TRC mask variable initial value"
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    1
+		    Cell		    "IDRAM"
+		    PropName		    "placement"
+		    }
+		    contents		    "Data"
+		    }
+		    MATStruct {
+		    name		    ".sysdata"
+		    description		    "DSP/BIOS kernel state"
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    1
+		    Cell		    "IDRAM"
+		    PropName		    "placement"
+		    }
+		    contents		    "Data"
+		    }
+		    MATStruct {
+		    name		    ".obj"
+		    description		    "DSP/BIOS configuration"
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    1
+		    Cell		    "IDRAM"
+		    PropName		    "placement"
+		    }
+		    contents		    "Data"
+		    }
+		    MATStruct {
+		    name		    ".bios"
+		    description		    "DSP/BIOS code"
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    1
+		    Cell		    "IPRAM"
+		    PropName		    "placement"
+		    }
+		    contents		    "Code"
+		    }
+		    MATStruct {
+		    name		    ".sysinit"
+		    description		    "DSP/BIOS startup initialization"
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    1
+		    Cell		    "IPRAM"
+		    PropName		    "placement"
+		    }
+		    contents		    "Code"
+		    }
+		    MATStruct {
+		    name		    ".hwi"
+		    description		    "DSP/BIOS dispatch code"
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    1
+		    Cell		    "IPRAM"
+		    PropName		    "placement"
+		    }
+		    contents		    "Code"
+		    }
+		    MATStruct {
+		    name		    ".hwi_vec"
+		    description		    "DSP/BIOS ISR table"
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    1
+		    Cell		    "IPRAM"
+		    PropName		    "placement"
+		    }
+		    contents		    "Code"
+		    }
+		    MATStruct {
+		    name		    ".rtdx_text"
+		    description		    "Code for RTDX module"
+		    Array {
+		    Type		    "Cell"
+		    Dimension		    1
+		    Cell		    "IPRAM"
+		    PropName		    "placement"
+		    }
+		    contents		    "Code"
+		    }
+		    PropName		    "section"
+		    }
+		    numSections		    [10.0]
+		    codeObjectMem	    "IPRAM"
+		    dataObjectMem	    "IDRAM"
+		    }
+		    PropName		    "dspbios"
+		  }
+		  Array {
+		    Type		    "Struct"
+		    Dimension		    1
+		    MATStruct {
+		    numSections		    [0.0]
+		    section		    []
+		    }
+		    PropName		    "custom"
+		  }
+		}
+		PropName		"mem"
+	      }
+	      cache		      []
+	      boardType		      "F28335 eZdsp"
+	      isSimulator	      [0.0]
+	      enableHSRTDX	      [0.0]
+	      versionNumber	      "2.9.1"
+	      Array {
+		Type			"Struct"
+		Dimension		1
+		MATStruct {
+		  enable		  "off"
+		  Array {
+		    Type		    "Struct"
+		    Dimension		    1
+		    MATStruct {
+		    stackSize		    [4096.0]
+		    staticStackMemSegment   "IDRAM"
+		    dynamicStackMemSegment  "MEM_NULL"
+		    }
+		    PropName		    "TSK"
+		  }
+		  schedulerType		  "Rate priority"
+		}
+		PropName		"dspbios"
+	      }
+	      Array {
+		Type			"Struct"
+		Dimension		1
+		MATStruct {
+		  errId			  []
+		  Array {
+		    Type		    "Cell"
+		    Dimension		    0
+		    PropName		    "errMsg"
+		  }
+		}
+		PropName		"lastErr"
+	      }
+	      Array {
+		Type			"Struct"
+		Dimension		1
+		MATStruct {
+		  Array {
+		    Type		    "Cell"
+		    Dimension		    0
+		    PropName		    "sourceFiles"
+		  }
+		  Array {
+		    Type		    "Cell"
+		    Dimension		    0
+		    PropName		    "includePaths"
+		  }
+		  Array {
+		    Type		    "Cell"
+		    Dimension		    0
+		    PropName		    "libraries"
+		  }
+		  Array {
+		    Type		    "Cell"
+		    Dimension		    0
+		    PropName		    "initializeFunctions"
+		  }
+		  Array {
+		    Type		    "Cell"
+		    Dimension		    0
+		    PropName		    "terminateFunctions"
+		  }
+		}
+		PropName		"customCode"
+	      }
+	      enableDSPBIOSTab	      [0.0]
+	      RTOS		      "None"
+	      Array {
+		Type			"Struct"
+		Dimension		1
+		MATStruct {
+		  Array {
+		    Type		    "Struct"
+		    Dimension		    1
+		    MATStruct {
+		    DSPChipLabel	    "TI TMS320C28335"
+		    Array {
+		    Type		    "Struct"
+		    Dimension		    1
+		    MATStruct {
+		    ADCLKPS		    "3"
+		    CPS			    "1"
+		    ACQ_PS		    "4"
+		    OffsetCorrectionValue   [0.0]
+		    ExternalReferenceSelector "off"
+		    Continuous		    "off"
+		    ADCCLK		    [6.25]
+		    AcquisitionWindow	    [0.8]
+		    }
+		    PropName		    "ADC"
+		    }
+		    Array {
+		    Type		    "Struct"
+		    Dimension		    1
+		    MATStruct {
+		    BaudRatePrescaler	    [5.0]
+		    TSEG1		    "8"
+		    TSEG2		    "6"
+		    SBG			    "Only_falling_edges"
+		    SJW			    "2"
+		    SAM			    "Sample_one_time"
+		    EnhancedCANMode	    "on"
+		    SelfTestMode	    "off"
+		    PinAssignment_Tx	    "GPIO31"
+		    PinAssignment_Rx	    "GPIO30"
+		    ModuleClockFrequency    [75.0]
+		    BaudRate		    [1000000.0]
+		    }
+		    PropName		    "eCAN_A"
+		    }
+		    Array {
+		    Type		    "Struct"
+		    Dimension		    1
+		    MATStruct {
+		    BaudRatePrescaler	    [5.0]
+		    TSEG1		    "8"
+		    TSEG2		    "6"
+		    SBG			    "Only_falling_edges"
+		    SJW			    "2"
+		    SAM			    "Sample_one_time"
+		    EnhancedCANMode	    "on"
+		    SelfTestMode	    "off"
+		    PinAssignment_Tx	    "GPIO8"
+		    PinAssignment_Rx	    "GPIO10"
+		    ModuleClockFrequency    [75.0]
+		    BaudRate		    [1000000.0]
+		    }
+		    PropName		    "eCAN_B"
+		    }
+		    Array {
+		    Type		    "Struct"
+		    Dimension		    1
+		    MATStruct {
+		    PinAssignment_ECAP1	    "GPIO5"
+		    PinAssignment_ECAP2	    "GPIO7"
+		    PinAssignment_ECAP3	    "GPIO9"
+		    PinAssignment_ECAP4	    "GPIO11"
+		    PinAssignment_ECAP5	    "GPIO3"
+		    PinAssignment_ECAP6	    "GPIO1"
+		    }
+		    PropName		    "eCAP"
+		    }
+		    Array {
+		    Type		    "Struct"
+		    Dimension		    1
+		    MATStruct {
+		    PinAssignment_SYNCI	    "None"
+		    PinAssignment_SYNCO	    "None"
+		    }
+		    PropName		    "ePWM"
+		    }
+		    Array {
+		    Type		    "Struct"
+		    Dimension		    1
+		    MATStruct {
+		    Mode		    "Master"
+		    AddrDataFormat	    "7-Bit Addressing"
+		    OwnAddress		    [1.0]
+		    BitCount		    "8"
+		    ModuleClockFrequency    [15000000.0]
+		    MasterClockFrequency    [750000.0]
+		    ModuleClockPrescaler    [9.0]
+		    MasterClkLowTime	    [5.0]
+		    MasterClkHighTime	    [5.0]
+		    EnableLoopback	    "off"
+		    EnableTxInt		    "off"
+		    TxFifoLevel		    "0"
+		    EnableRxInt		    "off"
+		    RxFifoLevel		    "0"
+		    EnableSysInt	    "off"
+		    AAS			    "off"
+		    SCD			    "off"
+		    ARDY		    "off"
+		    NACK		    "off"
+		    AL			    "off"
+		    }
+		    PropName		    "I2C"
+		    }
+		    Array {
+		    Type		    "Struct"
+		    Dimension		    1
+		    MATStruct {
+		    EnableLoopBack	    "off"
+		    SuspensionMode	    "Free_run"
+		    NumberOfStopBits	    "1"
+		    ParityMode		    "None"
+		    CharacterLengthBits	    "8"
+		    BaudRate		    "114329"
+		    CommunicationMode	    "Raw_data"
+		    BlockingMode	    "off"
+		    DataByteOrder	    "Little_Endian"
+		    DataSwapWidth	    "8_bits"
+		    PinAssignment_Tx	    "GPIO29"
+		    PinAssignment_Rx	    "GPIO28"
+		    UserBaudRate	    "115200"
+		    BaudRatePrescaler	    "40"
+		    }
+		    PropName		    "SCI_A"
+		    }
+		    Array {
+		    Type		    "Struct"
+		    Dimension		    1
+		    MATStruct {
+		    EnableLoopBack	    "off"
+		    SuspensionMode	    "Free_run"
+		    NumberOfStopBits	    "1"
+		    ParityMode		    "None"
+		    CharacterLengthBits	    "8"
+		    BaudRate		    "114329"
+		    CommunicationMode	    "Raw_data"
+		    BlockingMode	    "off"
+		    DataByteOrder	    "Little_Endian"
+		    DataSwapWidth	    "8_bits"
+		    PinAssignment_Tx	    "GPIO9"
+		    PinAssignment_Rx	    "GPIO11"
+		    UserBaudRate	    "115200"
+		    BaudRatePrescaler	    "40"
+		    }
+		    PropName		    "SCI_B"
+		    }
+		    Array {
+		    Type		    "Struct"
+		    Dimension		    1
+		    MATStruct {
+		    EnableLoopBack	    "off"
+		    SuspensionMode	    "Free_run"
+		    NumberOfStopBits	    "1"
+		    ParityMode		    "None"
+		    CharacterLengthBits	    "8"
+		    BaudRate		    "114329"
+		    CommunicationMode	    "Raw_data"
+		    BlockingMode	    "off"
+		    DataByteOrder	    "Little_Endian"
+		    DataSwapWidth	    "8_bits"
+		    UserBaudRate	    "115200"
+		    BaudRatePrescaler	    "40"
+		    }
+		    PropName		    "SCI_C"
+		    }
+		    Array {
+		    Type		    "Struct"
+		    Dimension		    1
+		    MATStruct {
+		    Mode		    "Master"
+		    BaudRateFactor	    [127.0]
+		    DataBits		    "16"
+		    ClockPolarity	    "Rising_edge"
+		    ClockPhase		    "No_delay"
+		    SuspensionMode	    "Free_run"
+		    EnableLoopback	    "off"
+		    FIFOEnable		    "off"
+		    FIFOInterruptLevel_Rx   "16"
+		    FIFOInterruptLevel_Tx   "0"
+		    FIFOTransmitDelay	    [0.0]
+		    PinAssignment_CLK	    "GPIO18"
+		    PinAssignment_SOMI	    "GPIO17"
+		    PinAssignment_STE	    "GPIO19"
+		    PinAssignment_SIMO	    "GPIO16"
+		    BaudRate		    "292969"
+		    UserBaudRate	    "292969"
+		    }
+		    PropName		    "SPI_A"
+		    }
+		    Array {
+		    Type		    "Struct"
+		    Dimension		    1
+		    MATStruct {
+		    PinAssignment_eQEP1A    "GPIO20"
+		    PinAssignment_eQEP1B    "GPIO21"
+		    PinAssignment_eQEP1S    "GPIO22"
+		    PinAssignment_eQEP1I    "GPIO23"
+		    }
+		    PropName		    "eQEP"
+		    }
+		    Array {
+		    Type		    "Struct"
+		    Dimension		    1
+		    MATStruct {
+		    Enable_watchdog	    "off"
+		    Watchdogclock	    "OSCCLK/512/1"
+		    Time_period		    [0.0043690666666666668]
+		    Watchdogevent	    "Chip reset"
+		    }
+		    PropName		    "Watchdog"
+		    }
+		    Array {
+		    Type		    "Struct"
+		    Dimension		    1
+		    MATStruct {
+		    QualPRD		    [0.0]
+		    GPIOQualSel0	    "Synchronize to SYSCLKOUT only"
+		    GPIOQualSel1	    "Synchronize to SYSCLKOUT only"
+		    GPIOQualSel2	    "Synchronize to SYSCLKOUT only"
+		    GPIOQualSel3	    "Synchronize to SYSCLKOUT only"
+		    GPIOQualSel4	    "Synchronize to SYSCLKOUT only"
+		    GPIOQualSel5	    "Synchronize to SYSCLKOUT only"
+		    GPIOQualSel6	    "Synchronize to SYSCLKOUT only"
+		    GPIOQualSel7	    "Synchronize to SYSCLKOUT only"
+		    }
+		    PropName		    "GPIO0_7"
+		    }
+		    Array {
+		    Type		    "Struct"
+		    Dimension		    1
+		    MATStruct {
+		    QualPRD		    [0.0]
+		    GPIOQualSel8	    "Synchronize to SYSCLKOUT only"
+		    GPIOQualSel9	    "Synchronize to SYSCLKOUT only"
+		    GPIOQualSel10	    "Synchronize to SYSCLKOUT only"
+		    GPIOQualSel11	    "Synchronize to SYSCLKOUT only"
+		    GPIOQualSel12	    "Synchronize to SYSCLKOUT only"
+		    GPIOQualSel13	    "Synchronize to SYSCLKOUT only"
+		    GPIOQualSel14	    "Synchronize to SYSCLKOUT only"
+		    GPIOQualSel15	    "Synchronize to SYSCLKOUT only"
+		    }
+		    PropName		    "GPIO8_15"
+		    }
+		    Array {
+		    Type		    "Struct"
+		    Dimension		    1
+		    MATStruct {
+		    QualPRD		    [0.0]
+		    GPIOQualSel16	    "Synchronize to SYSCLKOUT only"
+		    GPIOQualSel17	    "Synchronize to SYSCLKOUT only"
+		    GPIOQualSel18	    "Synchronize to SYSCLKOUT only"
+		    GPIOQualSel19	    "Synchronize to SYSCLKOUT only"
+		    GPIOQualSel20	    "Synchronize to SYSCLKOUT only"
+		    GPIOQualSel21	    "Synchronize to SYSCLKOUT only"
+		    GPIOQualSel22	    "Synchronize to SYSCLKOUT only"
+		    GPIOQualSel23	    "Synchronize to SYSCLKOUT only"
+		    }
+		    PropName		    "GPIO16_23"
+		    }
+		    Array {
+		    Type		    "Struct"
+		    Dimension		    1
+		    MATStruct {
+		    QualPRD		    [0.0]
+		    GPIOQualSel24	    "Synchronize to SYSCLKOUT only"
+		    GPIOQualSel25	    "Synchronize to SYSCLKOUT only"
+		    GPIOQualSel26	    "Synchronize to SYSCLKOUT only"
+		    GPIOQualSel27	    "Synchronize to SYSCLKOUT only"
+		    GPIOQualSel28	    "Synchronize to SYSCLKOUT only"
+		    GPIOQualSel29	    "Synchronize to SYSCLKOUT only"
+		    GPIOQualSel30	    "Synchronize to SYSCLKOUT only"
+		    GPIOQualSel31	    "Synchronize to SYSCLKOUT only"
+		    }
+		    PropName		    "GPIO24_31"
+		    }
+		    Array {
+		    Type		    "Struct"
+		    Dimension		    1
+		    MATStruct {
+		    QualPRD		    [0.0]
+		    GPIOQualSel32	    "Synchronize to SYSCLKOUT only"
+		    GPIOQualSel33	    "Synchronize to SYSCLKOUT only"
+		    GPIOQualSel34	    "Synchronize to SYSCLKOUT only"
+		    GPIOQualSel35	    "Synchronize to SYSCLKOUT only"
+		    GPIOQualSel36	    "Synchronize to SYSCLKOUT only"
+		    GPIOQualSel37	    "Synchronize to SYSCLKOUT only"
+		    GPIOQualSel38	    "Synchronize to SYSCLKOUT only"
+		    GPIOQualSel39	    "Synchronize to SYSCLKOUT only"
+		    }
+		    PropName		    "GPIO32_39"
+		    }
+		    Array {
+		    Type		    "Struct"
+		    Dimension		    1
+		    MATStruct {
+		    QualPRD		    [0.0]
+		    GPIOQualSel40	    "Synchronize to SYSCLKOUT only"
+		    GPIOQualSel41	    "Synchronize to SYSCLKOUT only"
+		    GPIOQualSel42	    "Synchronize to SYSCLKOUT only"
+		    GPIOQualSel43	    "Synchronize to SYSCLKOUT only"
+		    GPIOQualSel44	    "Synchronize to SYSCLKOUT only"
+		    GPIOQualSel45	    "Synchronize to SYSCLKOUT only"
+		    GPIOQualSel46	    "Synchronize to SYSCLKOUT only"
+		    GPIOQualSel47	    "Synchronize to SYSCLKOUT only"
+		    }
+		    PropName		    "GPIO40_47"
+		    }
+		    Array {
+		    Type		    "Struct"
+		    Dimension		    1
+		    MATStruct {
+		    QualPRD		    [0.0]
+		    GPIOQualSel48	    "Synchronize to SYSCLKOUT only"
+		    GPIOQualSel49	    "Synchronize to SYSCLKOUT only"
+		    GPIOQualSel50	    "Synchronize to SYSCLKOUT only"
+		    GPIOQualSel51	    "Synchronize to SYSCLKOUT only"
+		    GPIOQualSel52	    "Synchronize to SYSCLKOUT only"
+		    GPIOQualSel53	    "Synchronize to SYSCLKOUT only"
+		    GPIOQualSel54	    "Synchronize to SYSCLKOUT only"
+		    GPIOQualSel55	    "Synchronize to SYSCLKOUT only"
+		    }
+		    PropName		    "GPIO48_55"
+		    }
+		    Array {
+		    Type		    "Struct"
+		    Dimension		    1
+		    MATStruct {
+		    QualPRD		    [0.0]
+		    GPIOQualSel56	    "Synchronize to SYSCLKOUT only"
+		    GPIOQualSel57	    "Synchronize to SYSCLKOUT only"
+		    GPIOQualSel58	    "Synchronize to SYSCLKOUT only"
+		    GPIOQualSel59	    "Synchronize to SYSCLKOUT only"
+		    GPIOQualSel60	    "Synchronize to SYSCLKOUT only"
+		    GPIOQualSel61	    "Synchronize to SYSCLKOUT only"
+		    GPIOQualSel62	    "Synchronize to SYSCLKOUT only"
+		    GPIOQualSel63	    "Synchronize to SYSCLKOUT only"
+		    }
+		    PropName		    "GPIO56_63"
+		    }
+		    Array {
+		    Type		    "Struct"
+		    Dimension		    1
+		    MATStruct {
+		    Enable_Flash	    "Disable"
+		    Automatic		    "on"
+		    SectorA		    "on"
+		    SectorB		    "on"
+		    SectorC		    "on"
+		    SectorD		    "on"
+		    SectorE		    "on"
+		    SectorF		    "on"
+		    SectorG		    "on"
+		    SectorH		    "on"
+		    SectorI		    "on"
+		    SectorJ		    "on"
+		    APIBrowse		    "Browse"
+		    API_Dir		    "C:\\tidcs\\c28\\Flash28_API\\Flash28335_API_V101\\lib\\Flash28335_API_V101.lib"
+		    Execute		    "Execute"
+		    }
+		    PropName		    "Flash_loader"
+		    }
+		    Array {
+		    Type		    "Struct"
+		    Dimension		    1
+		    MATStruct {
+		    EnableDMAChannel	    "off"
+		    DataSize		    "16 bit"
+		    InterruptSrc	    "None"
+		    ExternalPin		    "0"
+		    BurstSize		    "1"
+		    TransferSize	    "1"
+		    WrapSrcSize		    "65536"
+		    WrapDstSize		    "65536"
+		    SrcBeginAdd		    "0xC000"
+		    SrcBurstStep	    "0"
+		    SrcTransStep	    "0"
+		    SrcWrapStep		    "0"
+		    DstBeginAdd		    "0xD000"
+		    DstBurstStep	    "0"
+		    DstTransStep	    "0"
+		    DstWrapStep		    "0"
+		    GenInterrupt	    "Never"
+		    EnableOneShot	    "off"
+		    SyncEnable		    "off"
+		    EnableContinuous	    "off"
+		    EnableDSTSync	    "off"
+		    SetCh1ToHigh	    "off"
+		    EnableOverFlow	    "off"
+		    }
+		    PropName		    "DMA_ch1"
+		    }
+		    Array {
+		    Type		    "Struct"
+		    Dimension		    1
+		    MATStruct {
+		    EnableDMAChannel	    "off"
+		    DataSize		    "16 bit"
+		    InterruptSrc	    "None"
+		    ExternalPin		    "0"
+		    BurstSize		    "1"
+		    TransferSize	    "1"
+		    WrapSrcSize		    "65536"
+		    WrapDstSize		    "65536"
+		    SrcBeginAdd		    "0xC000"
+		    SrcBurstStep	    "0"
+		    SrcTransStep	    "0"
+		    SrcWrapStep		    "0"
+		    DstBeginAdd		    "0xD000"
+		    DstBurstStep	    "0"
+		    DstTransStep	    "0"
+		    DstWrapStep		    "0"
+		    GenInterrupt	    "Never"
+		    EnableOneShot	    "off"
+		    SyncEnable		    "off"
+		    EnableContinuous	    "off"
+		    EnableDSTSync	    "off"
+		    EnableOverFlow	    "off"
+		    }
+		    PropName		    "DMA_ch2"
+		    }
+		    Array {
+		    Type		    "Struct"
+		    Dimension		    1
+		    MATStruct {
+		    EnableDMAChannel	    "off"
+		    DataSize		    "16 bit"
+		    InterruptSrc	    "None"
+		    ExternalPin		    "0"
+		    BurstSize		    "1"
+		    TransferSize	    "1"
+		    WrapSrcSize		    "65536"
+		    WrapDstSize		    "65536"
+		    SrcBeginAdd		    "0xC000"
+		    SrcBurstStep	    "0"
+		    SrcTransStep	    "0"
+		    SrcWrapStep		    "0"
+		    DstBeginAdd		    "0xD000"
+		    DstBurstStep	    "0"
+		    DstTransStep	    "0"
+		    DstWrapStep		    "0"
+		    GenInterrupt	    "Never"
+		    EnableOneShot	    "off"
+		    SyncEnable		    "off"
+		    EnableContinuous	    "off"
+		    EnableDSTSync	    "off"
+		    EnableOverFlow	    "off"
+		    }
+		    PropName		    "DMA_ch3"
+		    }
+		    Array {
+		    Type		    "Struct"
+		    Dimension		    1
+		    MATStruct {
+		    EnableDMAChannel	    "off"
+		    DataSize		    "16 bit"
+		    InterruptSrc	    "None"
+		    ExternalPin		    "0"
+		    BurstSize		    "1"
+		    TransferSize	    "1"
+		    WrapSrcSize		    "65536"
+		    WrapDstSize		    "65536"
+		    SrcBeginAdd		    "0xC000"
+		    SrcBurstStep	    "0"
+		    SrcTransStep	    "0"
+		    SrcWrapStep		    "0"
+		    DstBeginAdd		    "0xD000"
+		    DstBurstStep	    "0"
+		    DstTransStep	    "0"
+		    DstWrapStep		    "0"
+		    GenInterrupt	    "Never"
+		    EnableOneShot	    "off"
+		    SyncEnable		    "off"
+		    EnableContinuous	    "off"
+		    EnableDSTSync	    "off"
+		    EnableOverFlow	    "off"
+		    }
+		    PropName		    "DMA_ch4"
+		    }
+		    Array {
+		    Type		    "Struct"
+		    Dimension		    1
+		    MATStruct {
+		    EnableDMAChannel	    "off"
+		    DataSize		    "16 bit"
+		    InterruptSrc	    "None"
+		    ExternalPin		    "0"
+		    BurstSize		    "1"
+		    TransferSize	    "1"
+		    WrapSrcSize		    "65536"
+		    WrapDstSize		    "65536"
+		    SrcBeginAdd		    "0xC000"
+		    SrcBurstStep	    "0"
+		    SrcTransStep	    "0"
+		    SrcWrapStep		    "0"
+		    DstBeginAdd		    "0xD000"
+		    DstBurstStep	    "0"
+		    DstTransStep	    "0"
+		    DstWrapStep		    "0"
+		    GenInterrupt	    "Never"
+		    EnableOneShot	    "off"
+		    SyncEnable		    "off"
+		    EnableContinuous	    "off"
+		    EnableDSTSync	    "off"
+		    EnableOverFlow	    "off"
+		    }
+		    PropName		    "DMA_ch5"
+		    }
+		    Array {
+		    Type		    "Struct"
+		    Dimension		    1
+		    MATStruct {
+		    EnableDMAChannel	    "off"
+		    DataSize		    "16 bit"
+		    InterruptSrc	    "None"
+		    ExternalPin		    "0"
+		    BurstSize		    "1"
+		    TransferSize	    "1"
+		    WrapSrcSize		    "65536"
+		    WrapDstSize		    "65536"
+		    SrcBeginAdd		    "0xC000"
+		    SrcBurstStep	    "0"
+		    SrcTransStep	    "0"
+		    SrcWrapStep		    "0"
+		    DstBeginAdd		    "0xD000"
+		    DstBurstStep	    "0"
+		    DstTransStep	    "0"
+		    DstWrapStep		    "0"
+		    GenInterrupt	    "Never"
+		    EnableOneShot	    "off"
+		    SyncEnable		    "off"
+		    EnableContinuous	    "off"
+		    EnableDSTSync	    "off"
+		    EnableOverFlow	    "off"
+		    }
+		    PropName		    "DMA_ch6"
+		    }
+		    Array {
+		    Type		    "Struct"
+		    Dimension		    1
+		    MATStruct {
+		    OSCCLK		    [30.0]
+		    AutoSetPllSettings	    "on"
+		    PLLCR		    "10"
+		    DIVSEL		    "(OSCCLK * PLLCR)/2"
+		    ClosestCpuClock	    [150.0]
+		    LspclkDiv		    "SYSCLKOUT/4"
+		    LSPCLK		    [37.5]
+		    HspclkDiv		    "SYSCLKOUT/2"
+		    HSPCLK		    [75.0]
+		    }
+		    PropName		    "Clocking"
+		    }
+		    }
+		    PropName		    "c2833x"
+		  }
+		}
+		PropName		"peripherals"
+	      }
+	      procName		      "CPU"
+	      boardName		      "F2812 Device Simulator"
+	      realtimesupport	      "on"
+	      Array {
+		Type			"Struct"
+		Dimension		1
+		MATStruct {
+		  schedulingMode	  "real-time"
+		  baseRatePriority	  [40.0]
+		}
+		PropName		"OS"
+	      }
+	      tag		      "ccslinktgtpref_ccsv4"
+	    }
+	    PropName		    "TargetHardwareResources"
+	  }
+	}
+	PropName		"Components"
+      }
+      Name		      "Configuration"
+      ExtraOptions	      "-aGenerateTraceInfo=0 -aIgnoreTestpoints=0 -aProfileNumSamples=100 -aideObjBuildTimeout=1000"
+      " -aideObjTimeout=10 -aoldideObjBuildTimeout=1000 -aoldideObjTimeout=10 -asystemHeapSize=512 -asystemStackSize=51"
+      "2 "
+      CurrentDlgPage	      "Code Generation"
+      ConfigPrmDlgPosition     [ 58, 157, 1159, 705 ] 
+    }
+    PropName		    "ConfigurationSets"
+  }
+  Simulink.ConfigSet {
+    $PropName		    "ActiveConfigurationSet"
+    $ObjectID		    8
+  }
+  Object {
+    $PropName		    "DataTransfer"
+    $ObjectID		    21
+    $ClassName		    "Simulink.GlobalDataTransfer"
+    DefaultTransitionBetweenSyncTasks "Ensure deterministic transfer (maximum delay)"
+    DefaultTransitionBetweenAsyncTasks "Ensure data integrity only"
+    DefaultTransitionBetweenContTasks "Ensure deterministic transfer (minimum delay)"
+    DefaultExtrapolationMethodBetweenContTasks "None"
+    AutoInsertRateTranBlk   [0]
+  }
+  ExplicitPartitioning	  off
+  BlockDefaults {
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+    BlockRotation	    0
+    BlockMirror		    off
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    UseDisplayTextAsClickCallback off
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  MaskDefaults {
+    SelfModifiable	    "off"
+    IconFrame		    "on"
+    IconOpaque		    "on"
+    RunInitForIconRedraw    "off"
+    IconRotate		    "none"
+    PortRotate		    "default"
+    IconUnits		    "autoscale"
+  }
+  MaskParameterDefaults {
+    Evaluate		    "on"
+    Tunable		    "on"
+    NeverSave		    "off"
+    Internal		    "off"
+    ReadOnly		    "off"
+    Enabled		    "on"
+    Visible		    "on"
+    ToolTip		    "on"
+  }
+  BlockParameterDefaults {
+    Block {
+      BlockType		      ArithShift
+      BitShiftNumberSource    "Dialog"
+      BitShiftNumber	      "0"
+      BinPtShiftNumber	      "0"
+      BitShiftDirection	      "Bidirectional"
+      DiagnosticForOORShift   "None"
+      CheckOORBitShift	      off
+    }
+    Block {
+      BlockType		      Constant
+      Value		      "1"
+      VectorParams1D	      on
+      SamplingMode	      "Sample based"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Inherit from 'Constant value'"
+      LockScale		      off
+      SampleTime	      "inf"
+      FramePeriod	      "inf"
+      PreserveConstantTs      off
+    }
+    Block {
+      BlockType		      DataTypeConversion
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Inherit via back propagation"
+      LockScale		      off
+      ConvertRealWorld	      "Real World Value (RWV)"
+      RndMeth		      "Zero"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Demux
+      Outputs		      "4"
+      DisplayOption	      "none"
+      BusSelectionMode	      off
+    }
+    Block {
+      BlockType		      Gain
+      Gain		      "1"
+      Multiplication	      "Element-wise(K.*u)"
+      ParamMin		      "[]"
+      ParamMax		      "[]"
+      ParamDataTypeStr	      "Inherit: Same as input"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Same as input"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Inport
+      Port		      "1"
+      OutputFunctionCall      off
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      LockScale		      off
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      VarSizeSig	      "Inherit"
+      SampleTime	      "-1"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      LatchByDelayingOutsideSignal off
+      LatchInputForFeedbackSignals off
+      Interpolate	      on
+    }
+    Block {
+      BlockType		      Mux
+      Inputs		      "4"
+      DisplayOption	      "none"
+      UseBusObject	      off
+      BusObject		      "BusObject"
+      NonVirtualBus	      off
+    }
+    Block {
+      BlockType		      Outport
+      Port		      "1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      LockScale		      off
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      VarSizeSig	      "Inherit"
+      SampleTime	      "-1"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      SourceOfInitialOutputValue "Dialog"
+      OutputWhenDisabled      "held"
+      InitialOutput	      "[]"
+    }
+    Block {
+      BlockType		      RateTransition
+      Integrity		      on
+      Deterministic	      on
+      X0		      "0"
+      OutPortSampleTimeOpt    "Specify"
+      OutPortSampleTimeMultiple	"1"
+      OutPortSampleTime	      "-1"
+    }
+    Block {
+      BlockType		      S-Function
+      FunctionName	      "system"
+      SFunctionModules	      "''"
+      PortCounts	      "[]"
+      SFunctionDeploymentMode off
+    }
+    Block {
+      BlockType		      SubSystem
+      ShowPortLabels	      "FromPortIcon"
+      Permissions	      "ReadWrite"
+      PermitHierarchicalResolution "All"
+      TreatAsAtomicUnit	      off
+      CheckFcnCallInpInsideContextMsg off
+      SystemSampleTime	      "-1"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      FunctionInterfaceSpec   "void_void"
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      SimViewingDevice	      off
+      DataTypeOverride	      "UseLocalSettings"
+      DataTypeOverrideAppliesTo	"AllNumericTypes"
+      MinMaxOverflowLogging   "UseLocalSettings"
+      SFBlockType	      "NONE"
+      Variant		      off
+      GeneratePreprocessorConditionals off
+    }
+    Block {
+      BlockType		      Sum
+      IconShape		      "rectangular"
+      Inputs		      "++"
+      CollapseMode	      "All dimensions"
+      CollapseDim	      "1"
+      InputSameDT	      on
+      AccumDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Same as first input"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Terminator
+    }
+    Block {
+      BlockType		      TriggerPort
+      TriggerType	      "rising"
+      StatesWhenEnabling      "inherit"
+      PropagateVarSize	      "During execution"
+      ShowOutputPort	      off
+      OutputDataType	      "auto"
+      SampleTimeType	      "triggered"
+      SampleTime	      "1"
+      ZeroCross		      on
+      PortDimensions	      "-1"
+      TriggerSignalSampleTime "-1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      Interpolate	      on
+    }
+    Block {
+      BlockType		      Trigonometry
+      Operator		      "sin"
+      ApproximationMethod     "None"
+      NumberOfIterations      "11"
+      OutputSignalType	      "auto"
+      SampleTime	      "-1"
+    }
+  }
+  System {
+    Name		    "autopilot_model"
+    Location		    [-8, 19, 1300, 617]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "usletter"
+    PaperUnits		    "inches"
+    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+    TiledPageScale	    1
+    ShowPageBoundaries	    off
+    ZoomFactor		    "121"
+    ReportName		    "simulink-default.rpt"
+    SIDHighWatermark	    "390"
+    Block {
+      BlockType		      ArithShift
+      Name		      " "
+      SID		      "321"
+      Ports		      [1, 1]
+      Position		      [800, 786, 880, 814]
+      ZOrder		      -1
+      InputPortMap	      "u0"
+      BitShiftNumber	      "24"
+      BitShiftDirection	      "Left"
+    }
+    Block {
+      BlockType		      ArithShift
+      Name		      "  "
+      SID		      "322"
+      Ports		      [1, 1]
+      Position		      [805, 821, 885, 849]
+      ZOrder		      -2
+      InputPortMap	      "u0"
+      BitShiftNumber	      "16"
+      BitShiftDirection	      "Left"
+    }
+    Block {
+      BlockType		      ArithShift
+      Name		      "    "
+      SID		      "239"
+      Ports		      [1, 1]
+      Position		      [690, 281, 770, 309]
+      ZOrder		      -3
+      InputPortMap	      "u0"
+      BitShiftNumber	      "8"
+      BitShiftDirection	      "Left"
+    }
+    Block {
+      BlockType		      ArithShift
+      Name		      "     "
+      SID		      "296"
+      Ports		      [1, 1]
+      Position		      [695, 331, 775, 359]
+      ZOrder		      -4
+      InputPortMap	      "u0"
+      BitShiftNumber	      "8"
+      BitShiftDirection	      "Left"
+    }
+    Block {
+      BlockType		      DataTypeConversion
+      Name		      "      "
+      SID		      "317"
+      Position		      [680, 821, 750, 839]
+      ZOrder		      -5
+      OutDataTypeStr	      "uint32"
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      ArithShift
+      Name		      "        "
+      SID		      "298"
+      Ports		      [1, 1]
+      Position		      [695, 381, 775, 409]
+      ZOrder		      -6
+      InputPortMap	      "u0"
+      BitShiftNumber	      "8"
+      BitShiftDirection	      "Left"
+    }
+    Block {
+      BlockType		      ArithShift
+      Name		      "            "
+      SID		      "308"
+      Ports		      [1, 1]
+      Position		      [670, 656, 750, 684]
+      ZOrder		      -7
+      InputPortMap	      "u0"
+      BitShiftNumber	      "8"
+      BitShiftDirection	      "Left"
+    }
+    Block {
+      BlockType		      ArithShift
+      Name		      "                   "
+      SID		      "306"
+      Ports		      [1, 1]
+      Position		      [670, 606, 750, 634]
+      ZOrder		      -8
+      InputPortMap	      "u0"
+      BitShiftNumber	      "8"
+      BitShiftDirection	      "Left"
+    }
+    Block {
+      BlockType		      ArithShift
+      Name		      "                              "
+      SID		      "311"
+      Ports		      [1, 1]
+      Position		      [700, 726, 780, 754]
+      ZOrder		      -9
+      InputPortMap	      "u0"
+      BitShiftNumber	      "8"
+      BitShiftDirection	      "Left"
+    }
+    Block {
+      BlockType		      ArithShift
+      Name		      "                                   "
+      SID		      "300"
+      Ports		      [1, 1]
+      Position		      [690, 431, 770, 459]
+      ZOrder		      -10
+      InputPortMap	      "u0"
+      BitShiftNumber	      "8"
+      BitShiftDirection	      "Left"
+    }
+    Block {
+      BlockType		      DataTypeConversion
+      Name		      "                                          "
+      SID		      "316"
+      Position		      [705, 851, 775, 869]
+      ZOrder		      -11
+      OutDataTypeStr	      "uint32"
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      ArithShift
+      Name		      "                                                "
+      SID		      "304"
+      Ports		      [1, 1]
+      Position		      [680, 556, 760, 584]
+      ZOrder		      -12
+      InputPortMap	      "u0"
+      BitShiftNumber	      "8"
+      BitShiftDirection	      "Left"
+    }
+    Block {
+      BlockType		      DataTypeConversion
+      Name		      "                                                   "
+      SID		      "315"
+      Position		      [685, 791, 755, 809]
+      ZOrder		      -13
+      OutDataTypeStr	      "uint32"
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      ArithShift
+      Name		      "                                                          "
+      SID		      "302"
+      Ports		      [1, 1]
+      Position		      [675, 506, 755, 534]
+      ZOrder		      -14
+      InputPortMap	      "u0"
+      BitShiftNumber	      "8"
+      BitShiftDirection	      "Left"
+    }
+    Block {
+      BlockType		      DataTypeConversion
+      Name		      "                                                                           "
+      SID		      "318"
+      Position		      [690, 881, 760, 899]
+      ZOrder		      -15
+      OutDataTypeStr	      "uint32"
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      DataTypeConversion
+      Name		      "                                                                                                   "
+      "             "
+      SID		      "319"
+      Position		      [635, 728, 680, 752]
+      ZOrder		      -16
+      OutDataTypeStr	      "uint16"
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      DataTypeConversion
+      Name		      "                                                                                                   "
+      "                                      "
+      SID		      "320"
+      Position		      [635, 758, 680, 782]
+      ZOrder		      -17
+      OutDataTypeStr	      "uint16"
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      ArithShift
+      Name		      "  2"
+      SID		      "323"
+      Ports		      [1, 1]
+      Position		      [885, 856, 965, 884]
+      ZOrder		      -18
+      InputPortMap	      "u0"
+      BitShiftNumber	      "8"
+      BitShiftDirection	      "Left"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "C280x/C28x3x Hardware Interrupt"
+      SID		      "2"
+      Ports		      [0, 1]
+      Position		      [30, 297, 120, 343]
+      ZOrder		      -19
+      LibraryVersion	      "1.37"
+      SourceBlock	      "idelinklib_ticcs/C28x Hardware Interrupt"
+      SourceType	      "C28x Interrupt Block"
+      irqnumbers	      "[9]"
+      pienumbers	      "[5]"
+      irqpriorities	      "[30]"
+      irqpreempts	      "[0]"
+      showinput		      off
+      dspchiptype	      "C280X"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Constant"
+      SID		      "369"
+      Position		      [1140, 1205, 1170, 1235]
+      ZOrder		      -20
+      OutDataTypeStr	      "uint16"
+    }
+    Block {
+      BlockType		      DataTypeConversion
+      Name		      "Data Type Conversion1"
+      SID		      "331"
+      Position		      [1225, 802, 1255, 838]
+      ZOrder		      -21
+      OutDataTypeStr	      "uint16"
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      DataTypeConversion
+      Name		      "Data Type Conversion3"
+      SID		      "345"
+      Position		      [1215, 997, 1245, 1033]
+      ZOrder		      -22
+      OutDataTypeStr	      "uint16"
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      DataTypeConversion
+      Name		      "Data Type Conversion4"
+      SID		      "291"
+      Position		      [485, 403, 560, 437]
+      ZOrder		      -23
+      OutDataTypeStr	      "uint16"
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      DataTypeConversion
+      Name		      "Data Type Conversion5"
+      SID		      "292"
+      Position		      [470, 498, 545, 532]
+      ZOrder		      -24
+      OutDataTypeStr	      "uint16"
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Demux
+      Name		      "Demux1"
+      SID		      "108"
+      Ports		      [1, 8]
+      Position		      [625, 507, 630, 708]
+      ZOrder		      -25
+      ShowName		      off
+      Outputs		      "8"
+      DisplayOption	      "bar"
+    }
+    Block {
+      BlockType		      Demux
+      Name		      "Demux3"
+      SID		      "240"
+      Ports		      [1, 8]
+      Position		      [625, 276, 630, 489]
+      ZOrder		      -26
+      ShowName		      off
+      Outputs		      "8"
+      DisplayOption	      "bar"
+    }
+    Block {
+      BlockType		      Demux
+      Name		      "Demux4"
+      SID		      "310"
+      Ports		      [1, 8]
+      Position		      [590, 714, 595, 976]
+      ZOrder		      -27
+      ShowName		      off
+      Outputs		      "8"
+      DisplayOption	      "bar"
+    }
+    Block {
+      BlockType		      Demux
+      Name		      "Demux5"
+      SID		      "328"
+      Ports		      [1, 2]
+      Position		      [590, 1004, 595, 1066]
+      ZOrder		      -28
+      ShowName		      off
+      Outputs		      "2"
+      DisplayOption	      "bar"
+    }
+    Block {
+      BlockType		      Demux
+      Name		      "Demux6"
+      SID		      "329"
+      Ports		      [1, 4]
+      Position		      [610, 1065, 615, 1145]
+      ZOrder		      -29
+      ShowName		      off
+      DisplayOption	      "bar"
+    }
+    Block {
+      BlockType		      Demux
+      Name		      "Demux7"
+      SID		      "330"
+      Ports		      [1, 4]
+      Position		      [605, 1161, 610, 1249]
+      ZOrder		      -30
+      ShowName		      off
+      DisplayOption	      "bar"
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Function-Call\nSubsystem"
+      SID		      "4"
+      Ports		      [0, 6, 0, 1]
+      Position		      [15, 402, 285, 658]
+      ZOrder		      -31
+      LibraryVersion	      "1.225"
+      TreatAsAtomicUnit	      on
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      System {
+	Name			"Function-Call\nSubsystem"
+	Location		[-8, 19, 1300, 617]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  TriggerPort
+	  Name			  "function"
+	  SID			  "6"
+	  Ports			  []
+	  Position		  [90, 15, 110, 35]
+	  ZOrder		  -1
+	  TriggerType		  "function-call"
+	  StatesWhenEnabling	  "held"
+	}
+	Block {
+	  BlockType		  Terminator
+	  Name			  "Terminator"
+	  SID			  "10"
+	  Position		  [210, 85, 230, 105]
+	  ZOrder		  -2
+	}
+	Block {
+	  BlockType		  Terminator
+	  Name			  "Terminator1"
+	  SID			  "30"
+	  Position		  [210, 195, 230, 215]
+	  ZOrder		  -3
+	}
+	Block {
+	  BlockType		  Terminator
+	  Name			  "Terminator2"
+	  SID			  "39"
+	  Position		  [210, 310, 230, 330]
+	  ZOrder		  -4
+	}
+	Block {
+	  BlockType		  Terminator
+	  Name			  "Terminator3"
+	  SID			  "56"
+	  Position		  [215, 430, 235, 450]
+	  ZOrder		  -5
+	}
+	Block {
+	  BlockType		  Terminator
+	  Name			  "Terminator4"
+	  SID			  "59"
+	  Position		  [220, 535, 240, 555]
+	  ZOrder		  -6
+	}
+	Block {
+	  BlockType		  Terminator
+	  Name			  "Terminator5"
+	  SID			  "293"
+	  Position		  [230, 640, 250, 660]
+	  ZOrder		  -7
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "eCAN Receive"
+	  SID			  "8"
+	  Ports			  [0, 2]
+	  Position		  [45, 80, 155, 140]
+	  ZOrder		  -8
+	  LibraryVersion	  "1.84"
+	  SourceBlock		  "c280xlib/eCAN Receive"
+	  SourceType		  "C28x eCAN Receive"
+	  chipFamily		  "C28x3x"
+	  useModule		  "eCAN_A"
+	  mailboxNo		  "0"
+	  messageID		  "bin2dec('11000001111')"
+	  messageType		  "Standard (11-bit identifier)"
+	  sampleTime		  "-1"
+	  dataType		  "uint8"
+	  initValue		  "0"
+	  outputMessageLength	  off
+	  outputMessageTimeStamp  off
+	  postInterrupt		  on
+	  interruptLine		  "0"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "eCAN Receive1"
+	  SID			  "31"
+	  Ports			  [0, 2]
+	  Position		  [45, 220, 155, 280]
+	  ZOrder		  -9
+	  LibraryVersion	  "1.84"
+	  SourceBlock		  "c280xlib/eCAN Receive"
+	  SourceType		  "C28x eCAN Receive"
+	  chipFamily		  "C28x3x"
+	  useModule		  "eCAN_A"
+	  mailboxNo		  "3"
+	  messageID		  "bin2dec('10000001111')"
+	  messageType		  "Standard (11-bit identifier)"
+	  sampleTime		  "-1"
+	  dataType		  "uint8"
+	  initValue		  "0"
+	  outputMessageLength	  off
+	  outputMessageTimeStamp  off
+	  postInterrupt		  on
+	  interruptLine		  "0"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "eCAN Receive2"
+	  SID			  "40"
+	  Ports			  [0, 2]
+	  Position		  [45, 335, 155, 395]
+	  ZOrder		  -10
+	  LibraryVersion	  "1.84"
+	  SourceBlock		  "c280xlib/eCAN Receive"
+	  SourceType		  "C28x eCAN Receive"
+	  chipFamily		  "C28x3x"
+	  useModule		  "eCAN_A"
+	  mailboxNo		  "4"
+	  messageID		  "bin2dec('01100001111')"
+	  messageType		  "Standard (11-bit identifier)"
+	  sampleTime		  "-1"
+	  dataType		  "uint8"
+	  initValue		  "0"
+	  outputMessageLength	  off
+	  outputMessageTimeStamp  off
+	  postInterrupt		  on
+	  interruptLine		  "0"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "eCAN Receive3"
+	  SID			  "57"
+	  Ports			  [0, 2]
+	  Position		  [50, 455, 160, 515]
+	  ZOrder		  -11
+	  LibraryVersion	  "1.84"
+	  SourceBlock		  "c280xlib/eCAN Receive"
+	  SourceType		  "C28x eCAN Receive"
+	  chipFamily		  "C28x3x"
+	  useModule		  "eCAN_A"
+	  mailboxNo		  "7"
+	  messageID		  "bin2dec('01000001111')"
+	  messageType		  "Standard (11-bit identifier)"
+	  sampleTime		  "-1"
+	  dataType		  "uint32"
+	  initValue		  "0"
+	  outputMessageLength	  off
+	  outputMessageTimeStamp  off
+	  postInterrupt		  on
+	  interruptLine		  "0"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "eCAN Receive4"
+	  SID			  "60"
+	  Ports			  [0, 2]
+	  Position		  [55, 545, 165, 605]
+	  ZOrder		  -12
+	  LibraryVersion	  "1.84"
+	  SourceBlock		  "c280xlib/eCAN Receive"
+	  SourceType		  "C28x eCAN Receive"
+	  chipFamily		  "C28x3x"
+	  useModule		  "eCAN_A"
+	  mailboxNo		  "8"
+	  messageID		  "bin2dec('00100001111')"
+	  messageType		  "Standard (11-bit identifier)"
+	  sampleTime		  "-1"
+	  dataType		  "uint16"
+	  initValue		  "0"
+	  outputMessageLength	  off
+	  outputMessageTimeStamp  off
+	  postInterrupt		  on
+	  interruptLine		  "0"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "eCAN Receive5"
+	  SID			  "294"
+	  Ports			  [0, 2]
+	  Position		  [65, 665, 175, 725]
+	  ZOrder		  -13
+	  LibraryVersion	  "1.84"
+	  SourceBlock		  "c280xlib/eCAN Receive"
+	  SourceType		  "C28x eCAN Receive"
+	  chipFamily		  "C28x3x"
+	  useModule		  "eCAN_A"
+	  mailboxNo		  "10"
+	  messageID		  "bin2dec('11100001111')"
+	  messageType		  "Standard (11-bit identifier)"
+	  sampleTime		  "-1"
+	  dataType		  "uint16"
+	  initValue		  "0"
+	  outputMessageLength	  off
+	  outputMessageTimeStamp  off
+	  postInterrupt		  on
+	  interruptLine		  "0"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Y"
+	  SID			  "7"
+	  Position		  [365, 118, 395, 132]
+	  ZOrder		  -14
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Y1"
+	  SID			  "32"
+	  Position		  [365, 228, 395, 242]
+	  ZOrder		  -15
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Y2"
+	  SID			  "41"
+	  Position		  [365, 343, 395, 357]
+	  ZOrder		  -16
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Y3"
+	  SID			  "58"
+	  Position		  [370, 463, 400, 477]
+	  ZOrder		  -17
+	  Port			  "4"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Y4"
+	  SID			  "61"
+	  Position		  [375, 568, 405, 582]
+	  ZOrder		  -18
+	  Port			  "5"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Y5"
+	  SID			  "295"
+	  Position		  [385, 673, 415, 687]
+	  ZOrder		  -19
+	  Port			  "6"
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  SrcBlock		  "eCAN Receive"
+	  SrcPort		  2
+	  DstBlock		  "Y"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "eCAN Receive"
+	  SrcPort		  1
+	  DstBlock		  "Terminator"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "eCAN Receive1"
+	  SrcPort		  2
+	  Points		  [0, -30]
+	  DstBlock		  "Y1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "eCAN Receive1"
+	  SrcPort		  1
+	  Points		  [0, -30]
+	  DstBlock		  "Terminator1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "eCAN Receive2"
+	  SrcPort		  2
+	  Points		  [0, -30]
+	  DstBlock		  "Y2"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "eCAN Receive2"
+	  SrcPort		  1
+	  Points		  [0, -30]
+	  DstBlock		  "Terminator2"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "eCAN Receive3"
+	  SrcPort		  2
+	  Points		  [0, -30]
+	  DstBlock		  "Y3"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "eCAN Receive3"
+	  SrcPort		  1
+	  Points		  [0, -30]
+	  DstBlock		  "Terminator3"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "eCAN Receive4"
+	  SrcPort		  2
+	  Points		  [0, -15]
+	  DstBlock		  "Y4"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "eCAN Receive4"
+	  SrcPort		  1
+	  Points		  [0, -15]
+	  DstBlock		  "Terminator4"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "eCAN Receive5"
+	  SrcPort		  2
+	  Points		  [0, -30]
+	  DstBlock		  "Y5"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "eCAN Receive5"
+	  SrcPort		  1
+	  Points		  [0, -30]
+	  DstBlock		  "Terminator5"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "Gain1"
+      SID		      "351"
+      Position		      [1060, 1005, 1075, 1035]
+      ZOrder		      -33
+      Gain		      "1000"
+      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "MATLAB Function1"
+      SID		      "325"
+      Ports		      [1, 1]
+      Position		      [1115, 801, 1210, 839]
+      ZOrder		      -34
+      LibraryVersion	      "1.32"
+      ErrorFcn		      "Stateflow.Translate.translate"
+      PermitHierarchicalResolution "ExplicitOnly"
+      TreatAsAtomicUnit	      on
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Inline"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      SFBlockType	      "MATLAB Function"
+      System {
+	Name			"MATLAB Function1"
+	Location		[227, 345, 838, 789]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	SIDHighWatermark	"20"
+	Block {
+	  BlockType		  Inport
+	  Name			  "u"
+	  SID			  "325::1"
+	  Position		  [20, 101, 40, 119]
+	  ZOrder		  -1
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Demux
+	  Name			  " Demux "
+	  SID			  "325::19"
+	  Ports			  [1, 1]
+	  Position		  [270, 230, 320, 270]
+	  ZOrder		  2
+	  Outputs		  "1"
+	}
+	Block {
+	  BlockType		  S-Function
+	  Name			  " SFunction "
+	  SID			  "325::18"
+	  Tag			  "Stateflow S-Function autopilot_model 1"
+	  Ports			  [1, 2]
+	  Position		  [180, 100, 230, 160]
+	  ZOrder		  1
+	  FunctionName		  "sf_sfun"
+	  PortCounts		  "[1 2]"
+	  EnableBusSupport	  off
+	  Port {
+	    PortNumber		    2
+	    Name		    "y"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Terminator
+	  Name			  " Terminator "
+	  SID			  "325::20"
+	  Position		  [460, 241, 480, 259]
+	  ZOrder		  3
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "y"
+	  SID			  "325::5"
+	  Position		  [460, 101, 480, 119]
+	  ZOrder		  -5
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  SrcBlock		  "u"
+	  SrcPort		  1
+	  DstBlock		  " SFunction "
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "y"
+	  Labels		  [0, 0]
+	  SrcBlock		  " SFunction "
+	  SrcPort		  2
+	  DstBlock		  "y"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  " Demux "
+	  SrcPort		  1
+	  DstBlock		  " Terminator "
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  " SFunction "
+	  SrcPort		  1
+	  DstBlock		  " Demux "
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "MATLAB Function2"
+      SID		      "357"
+      Ports		      [1, 1]
+      Position		      [775, 1001, 910, 1039]
+      ZOrder		      -35
+      LibraryVersion	      "1.32"
+      ErrorFcn		      "Stateflow.Translate.translate"
+      PermitHierarchicalResolution "ExplicitOnly"
+      TreatAsAtomicUnit	      on
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Inline"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      SFBlockType	      "MATLAB Function"
+      System {
+	Name			"MATLAB Function2"
+	Location		[227, 345, 838, 789]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	SIDHighWatermark	"20"
+	Block {
+	  BlockType		  Inport
+	  Name			  "u"
+	  SID			  "357::1"
+	  Position		  [20, 101, 40, 119]
+	  ZOrder		  -1
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Demux
+	  Name			  " Demux "
+	  SID			  "357::19"
+	  Ports			  [1, 1]
+	  Position		  [270, 230, 320, 270]
+	  ZOrder		  2
+	  Outputs		  "1"
+	}
+	Block {
+	  BlockType		  S-Function
+	  Name			  " SFunction "
+	  SID			  "357::18"
+	  Tag			  "Stateflow S-Function autopilot_model 2"
+	  Ports			  [1, 2]
+	  Position		  [180, 100, 230, 160]
+	  ZOrder		  1
+	  FunctionName		  "sf_sfun"
+	  PortCounts		  "[1 2]"
+	  EnableBusSupport	  off
+	  Port {
+	    PortNumber		    2
+	    Name		    "y"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Terminator
+	  Name			  " Terminator "
+	  SID			  "357::20"
+	  Position		  [460, 241, 480, 259]
+	  ZOrder		  3
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "y"
+	  SID			  "357::5"
+	  Position		  [460, 101, 480, 119]
+	  ZOrder		  -5
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  SrcBlock		  "u"
+	  SrcPort		  1
+	  DstBlock		  " SFunction "
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "y"
+	  Labels		  [0, 0]
+	  SrcBlock		  " SFunction "
+	  SrcPort		  2
+	  DstBlock		  "y"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  " Demux "
+	  SrcPort		  1
+	  DstBlock		  " Terminator "
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  " SFunction "
+	  SrcPort		  1
+	  DstBlock		  " Demux "
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      Mux
+      Name		      "Mux1"
+      SID		      "289"
+      Ports		      [4, 1]
+      Position		      [1375, 307, 1380, 488]
+      ZOrder		      -38
+      ShowName		      off
+      DisplayOption	      "bar"
+    }
+    Block {
+      BlockType		      RateTransition
+      Name		      "Rate Transition"
+      SID		      "11"
+      Position		      [400, 399, 440, 441]
+      ZOrder		      -39
+      Deterministic	      off
+    }
+    Block {
+      BlockType		      RateTransition
+      Name		      "Rate Transition1"
+      SID		      "34"
+      Position		      [410, 487, 450, 543]
+      ZOrder		      -40
+      Deterministic	      off
+    }
+    Block {
+      BlockType		      RateTransition
+      Name		      "Rate Transition2"
+      SID		      "42"
+      Position		      [400, 569, 440, 611]
+      ZOrder		      -41
+      Deterministic	      off
+    }
+    Block {
+      BlockType		      RateTransition
+      Name		      "Rate Transition3"
+      SID		      "97"
+      Position		      [1430, 379, 1470, 421]
+      ZOrder		      -42
+      Deterministic	      off
+      OutPortSampleTime	      "0.01"
+    }
+    Block {
+      BlockType		      RateTransition
+      Name		      "Rate Transition4"
+      SID		      "62"
+      Position		      [410, 634, 450, 676]
+      ZOrder		      -43
+      Deterministic	      off
+    }
+    Block {
+      BlockType		      RateTransition
+      Name		      "Rate Transition5"
+      SID		      "63"
+      Position		      [410, 699, 450, 741]
+      ZOrder		      -44
+      Deterministic	      off
+    }
+    Block {
+      BlockType		      RateTransition
+      Name		      "Rate Transition6"
+      SID		      "348"
+      Position		      [1115, 999, 1155, 1041]
+      ZOrder		      -45
+      Deterministic	      off
+    }
+    Block {
+      BlockType		      RateTransition
+      Name		      "Rate Transition7"
+      SID		      "327"
+      Position		      [410, 789, 450, 831]
+      ZOrder		      -46
+      Deterministic	      off
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Sum1"
+      SID		      "297"
+      Ports		      [2, 1]
+      Position		      [845, 335, 865, 355]
+      ZOrder		      -47
+      ShowName		      off
+      IconShape		      "round"
+      Inputs		      "|++"
+      InputSameDT	      off
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Sum10"
+      SID		      "309"
+      Ports		      [2, 1]
+      Position		      [835, 660, 855, 680]
+      ZOrder		      -48
+      ShowName		      off
+      IconShape		      "round"
+      Inputs		      "|++"
+      InputSameDT	      off
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Sum11"
+      SID		      "312"
+      Ports		      [2, 1]
+      Position		      [850, 730, 870, 750]
+      ZOrder		      -49
+      ShowName		      off
+      IconShape		      "round"
+      Inputs		      "|++"
+      InputSameDT	      off
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Sum12"
+      SID		      "324"
+      Ports		      [4, 1]
+      Position		      [1065, 805, 1095, 835]
+      ZOrder		      -50
+      ShowName		      off
+      IconShape		      "round"
+      Inputs		      "|++++"
+      InputSameDT	      off
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Sum13"
+      SID		      "368"
+      Ports		      [2, 1]
+      Position		      [1185, 1180, 1205, 1200]
+      ZOrder		      -51
+      ShowName		      off
+      IconShape		      "round"
+      Inputs		      "|++"
+      InputSameDT	      off
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Sum3"
+      SID		      "238"
+      Ports		      [2, 1]
+      Position		      [840, 285, 860, 305]
+      ZOrder		      -53
+      ShowName		      off
+      IconShape		      "round"
+      Inputs		      "|++"
+      InputSameDT	      off
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Sum5"
+      SID		      "299"
+      Ports		      [2, 1]
+      Position		      [840, 385, 860, 405]
+      ZOrder		      -54
+      ShowName		      off
+      IconShape		      "round"
+      Inputs		      "|++"
+      InputSameDT	      off
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Sum6"
+      SID		      "301"
+      Ports		      [2, 1]
+      Position		      [840, 435, 860, 455]
+      ZOrder		      -55
+      ShowName		      off
+      IconShape		      "round"
+      Inputs		      "|++"
+      InputSameDT	      off
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Sum7"
+      SID		      "303"
+      Ports		      [2, 1]
+      Position		      [830, 510, 850, 530]
+      ZOrder		      -56
+      ShowName		      off
+      IconShape		      "round"
+      Inputs		      "|++"
+      InputSameDT	      off
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Sum8"
+      SID		      "305"
+      Ports		      [2, 1]
+      Position		      [835, 560, 855, 580]
+      ZOrder		      -57
+      ShowName		      off
+      IconShape		      "round"
+      Inputs		      "|++"
+      InputSameDT	      off
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Sum9"
+      SID		      "307"
+      Ports		      [2, 1]
+      Position		      [835, 610, 855, 630]
+      ZOrder		      -58
+      ShowName		      off
+      IconShape		      "round"
+      Inputs		      "|++"
+      InputSameDT	      off
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Target Preferences"
+      SID		      "1"
+      Tag		      "ccslinktgtpref_ccsv4"
+      Ports		      []
+      Position		      [50, 35, 116, 80]
+      ZOrder		      -59
+      LibraryVersion	      "1.19"
+      UserDataPersistent      on
+      UserData		      "DataTag0"
+      SourceBlock	      "idelinklib_tgtpref/Target Preferences\nTemplate"
+      SourceType	      "Target Preferences"
+      library		      off
+    }
+    Block {
+      BlockType		      Trigonometry
+      Name		      "Trigonometric\nFunction"
+      SID		      "350"
+      Ports		      [1, 1]
+      Position		      [985, 1005, 1015, 1035]
+      ZOrder		      -60
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "eCAN Transmit1"
+      SID		      "98"
+      Ports		      [1]
+      Position		      [1530, 370, 1640, 430]
+      ZOrder		      -64
+      LibraryVersion	      "1.84"
+      SourceBlock	      "c280xlib/eCAN Transmit"
+      SourceType	      "C28x eCAN Transmit"
+      chipFamily	      "C28x3x"
+      useModule		      "eCAN_A"
+      mailboxNo		      "2"
+      messageID		      "bin2dec('10100001111')"
+      messageType	      "Standard (11-bit identifier)"
+      enableBlockingMode      off
+      postInterrupt	      off
+      interruptLine	      "0"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "eCAN Transmit2"
+      SID		      "358"
+      Ports		      [1]
+      Position		      [1530, 480, 1640, 540]
+      ZOrder		      -65
+      LibraryVersion	      "1.84"
+      SourceBlock	      "c280xlib/eCAN Transmit"
+      SourceType	      "C28x eCAN Transmit"
+      chipFamily	      "C28x3x"
+      useModule		      "eCAN_A"
+      mailboxNo		      "13"
+      messageID		      "bin2dec('10100011111')"
+      messageType	      "Standard (11-bit identifier)"
+      enableBlockingMode      off
+      postInterrupt	      off
+      interruptLine	      "0"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "eCAN Transmit3"
+      SID		      "359"
+      Ports		      [1]
+      Position		      [1530, 580, 1640, 640]
+      ZOrder		      -66
+      LibraryVersion	      "1.84"
+      SourceBlock	      "c280xlib/eCAN Transmit"
+      SourceType	      "C28x eCAN Transmit"
+      chipFamily	      "C28x3x"
+      useModule		      "eCAN_A"
+      mailboxNo		      "12"
+      messageID		      "bin2dec('10100101111')"
+      messageType	      "Standard (11-bit identifier)"
+      enableBlockingMode      off
+      postInterrupt	      off
+      interruptLine	      "0"
+    }
+    Line {
+      SrcBlock		      "C280x/C28x3x Hardware Interrupt"
+      SrcPort		      1
+      Points		      [25, 0]
+      DstBlock		      "Function-Call\nSubsystem"
+      DstPort		      trigger
+    }
+    Line {
+      SrcBlock		      "Function-Call\nSubsystem"
+      SrcPort		      1
+      Points		      [0, -10]
+      DstBlock		      "Rate Transition"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Function-Call\nSubsystem"
+      SrcPort		      2
+      Points		      [0, -5; 105, 0]
+      DstBlock		      "Rate Transition1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Function-Call\nSubsystem"
+      SrcPort		      3
+      Points		      [45, 0; 0, 80]
+      DstBlock		      "Rate Transition2"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Function-Call\nSubsystem"
+      SrcPort		      4
+      Points		      [35, 0; 0, 105]
+      DstBlock		      "Rate Transition4"
+      DstPort		      1
+    }
+    Line {
+      Labels		      [3, 0]
+      SrcBlock		      "Function-Call\nSubsystem"
+      SrcPort		      5
+      Points		      [25, 0; 0, 130]
+      DstBlock		      "Rate Transition5"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Rate Transition3"
+      SrcPort		      1
+      Points		      [20, 0]
+      Branch {
+	DstBlock		"eCAN Transmit1"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, 110]
+	Branch {
+	  DstBlock		  "eCAN Transmit2"
+	  DstPort		  1
+	}
+	Branch {
+	  Points		  [0, 100]
+	  DstBlock		  "eCAN Transmit3"
+	  DstPort		  1
+	}
+      }
+    }
+    Line {
+      SrcBlock		      "Rate Transition1"
+      SrcPort		      1
+      DstBlock		      "Data Type Conversion5"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "    "
+      SrcPort		      1
+      DstBlock		      "Sum3"
+      DstPort		      1
+    }
+    Line {
+      Labels		      [1, 0]
+      SrcBlock		      "Demux3"
+      SrcPort		      2
+      DstBlock		      "Sum3"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Demux3"
+      SrcPort		      1
+      DstBlock		      "    "
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Mux1"
+      SrcPort		      1
+      DstBlock		      "Rate Transition3"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Rate Transition"
+      SrcPort		      1
+      DstBlock		      "Data Type Conversion4"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Data Type Conversion4"
+      SrcPort		      1
+      Points		      [20, 0; 0, -35]
+      DstBlock		      "Demux3"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Data Type Conversion5"
+      SrcPort		      1
+      Points		      [20, 0; 0, 90; 25, 5]
+      DstBlock		      "Demux1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "     "
+      SrcPort		      1
+      DstBlock		      "Sum1"
+      DstPort		      1
+    }
+    Line {
+      Labels		      [1, 0]
+      SrcBlock		      "Demux3"
+      SrcPort		      4
+      DstBlock		      "Sum1"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Demux3"
+      SrcPort		      3
+      DstBlock		      "     "
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "        "
+      SrcPort		      1
+      DstBlock		      "Sum5"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Demux3"
+      SrcPort		      5
+      DstBlock		      "        "
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Demux3"
+      SrcPort		      6
+      DstBlock		      "Sum5"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "                                   "
+      SrcPort		      1
+      DstBlock		      "Sum6"
+      DstPort		      1
+    }
+    Line {
+      Labels		      [1, 0]
+      SrcBlock		      "Demux3"
+      SrcPort		      8
+      DstBlock		      "Sum6"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Demux3"
+      SrcPort		      7
+      DstBlock		      "                                   "
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Sum1"
+      SrcPort		      1
+      Points		      [45, 0]
+    }
+    Line {
+      SrcBlock		      "Sum5"
+      SrcPort		      1
+      Points		      [50, 0]
+    }
+    Line {
+      SrcBlock		      "                                                          "
+      SrcPort		      1
+      DstBlock		      "Sum7"
+      DstPort		      1
+    }
+    Line {
+      Labels		      [1, 0]
+      SrcBlock		      "Demux1"
+      SrcPort		      2
+      DstBlock		      "Sum7"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Demux1"
+      SrcPort		      1
+      DstBlock		      "                                                          "
+      DstPort		      1
+    }
+    Line {
+      Labels		      [1, 0]
+      SrcBlock		      "Sum7"
+      SrcPort		      1
+      Points		      [70, 0]
+    }
+    Line {
+      SrcBlock		      "Sum6"
+      SrcPort		      1
+      Points		      [0, 20]
+      DstBlock		      "Mux1"
+      DstPort		      4
+    }
+    Line {
+      SrcBlock		      "Demux1"
+      SrcPort		      3
+      DstBlock		      "                                                "
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "                                                "
+      SrcPort		      1
+      DstBlock		      "Sum8"
+      DstPort		      1
+    }
+    Line {
+      Labels		      [3, 0]
+      SrcBlock		      "Demux1"
+      SrcPort		      4
+      Points		      [9, 0; 0, 116; 346, 0; 0, -116]
+      DstBlock		      "Sum8"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Sum8"
+      SrcPort		      1
+      Points		      [75, 0]
+    }
+    Line {
+      SrcBlock		      "Demux1"
+      SrcPort		      5
+      DstBlock		      "                   "
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "                   "
+      SrcPort		      1
+      DstBlock		      "Sum9"
+      DstPort		      1
+    }
+    Line {
+      Labels		      [4, 0]
+      SrcBlock		      "Demux1"
+      SrcPort		      6
+      Points		      [2, 0; 0, 59; 898, 0; 0, -54; -690, 0]
+      DstBlock		      "Sum9"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Sum9"
+      SrcPort		      1
+      Points		      [85, 0]
+    }
+    Line {
+      SrcBlock		      "Demux1"
+      SrcPort		      7
+      DstBlock		      "            "
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "            "
+      SrcPort		      1
+      DstBlock		      "Sum10"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Demux1"
+      SrcPort		      8
+      Points		      [35, 0; 0, 23; 175, 0]
+      DstBlock		      "Sum10"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Sum10"
+      SrcPort		      1
+      Points		      [85, 0]
+    }
+    Line {
+      SrcBlock		      "Rate Transition2"
+      SrcPort		      1
+      Points		      [115, 0; 0, 255]
+      DstBlock		      "Demux4"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Demux4"
+      SrcPort		      1
+      DstBlock		      "                                                                                               "
+      "                 "
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "                              "
+      SrcPort		      1
+      DstBlock		      "Sum11"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Demux4"
+      SrcPort		      2
+      DstBlock		      "                                                                                               "
+      "                                          "
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Sum11"
+      SrcPort		      1
+      Points		      [75, 0]
+    }
+    Line {
+      SrcBlock		      "Demux4"
+      SrcPort		      3
+      DstBlock		      "                                                   "
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Demux4"
+      SrcPort		      4
+      DstBlock		      "      "
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Demux4"
+      SrcPort		      5
+      DstBlock		      "                                          "
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "                                                   "
+      SrcPort		      1
+      DstBlock		      " "
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Demux4"
+      SrcPort		      6
+      DstBlock		      "                                                                           "
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "                                                                                               "
+      "                 "
+      SrcPort		      1
+      DstBlock		      "                              "
+      DstPort		      1
+    }
+    Line {
+      Labels		      [0, 0]
+      SrcBlock		      "                                                                                               "
+      "                                          "
+      SrcPort		      1
+      Points		      [175, 0]
+      DstBlock		      "Sum11"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "      "
+      SrcPort		      1
+      Points		      [15, 0; 0, 5]
+      DstBlock		      "  "
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "                                          "
+      SrcPort		      1
+      Points		      [45, 0; 0, 10]
+      DstBlock		      "  2"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "  "
+      SrcPort		      1
+      Points		      [140, 0; 0, -15]
+      DstBlock		      "Sum12"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "  2"
+      SrcPort		      1
+      Points		      [75, 0]
+      DstBlock		      "Sum12"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "                                                                           "
+      SrcPort		      1
+      Points		      [295, 0]
+      DstBlock		      "Sum12"
+      DstPort		      4
+    }
+    Line {
+      SrcBlock		      " "
+      SrcPort		      1
+      Points		      [174, 0]
+      DstBlock		      "Sum12"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Sum12"
+      SrcPort		      1
+      DstBlock		      "MATLAB Function1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Demux4"
+      SrcPort		      7
+      Points		      [15, 0]
+    }
+    Line {
+      SrcBlock		      "Demux4"
+      SrcPort		      8
+      Points		      [30, 0]
+    }
+    Line {
+      SrcBlock		      "Rate Transition4"
+      SrcPort		      1
+      Points		      [85, 0; 0, 380]
+      DstBlock		      "Demux5"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Function-Call\nSubsystem"
+      SrcPort		      6
+      Points		      [0, 180]
+      DstBlock		      "Rate Transition7"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Rate Transition5"
+      SrcPort		      1
+      Points		      [45, 0; 0, 385]
+      DstBlock		      "Demux6"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Rate Transition7"
+      SrcPort		      1
+      Points		      [35, 0; 0, 395]
+      DstBlock		      "Demux7"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Demux5"
+      SrcPort		      2
+      Points		      [85, 0]
+    }
+    Line {
+      SrcBlock		      "Demux6"
+      SrcPort		      2
+      Points		      [90, 0]
+    }
+    Line {
+      SrcBlock		      "Demux6"
+      SrcPort		      3
+      Points		      [90, 0]
+    }
+    Line {
+      SrcBlock		      "Demux6"
+      SrcPort		      4
+      Points		      [95, 0]
+    }
+    Line {
+      SrcBlock		      "Demux7"
+      SrcPort		      2
+      Points		      [110, 0]
+    }
+    Line {
+      SrcBlock		      "Demux7"
+      SrcPort		      3
+      Points		      [110, 0]
+    }
+    Line {
+      SrcBlock		      "Demux7"
+      SrcPort		      4
+      Points		      [105, 0]
+    }
+    Line {
+      SrcBlock		      "MATLAB Function1"
+      SrcPort		      1
+      DstBlock		      "Data Type Conversion1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Data Type Conversion1"
+      SrcPort		      1
+      Points		      [5, 0; 0, -445]
+      DstBlock		      "Mux1"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Demux6"
+      SrcPort		      1
+      Points		      [115, 0]
+    }
+    Line {
+      SrcBlock		      "MATLAB Function2"
+      SrcPort		      1
+      DstBlock		      "Trigonometric\nFunction"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Trigonometric\nFunction"
+      SrcPort		      1
+      DstBlock		      "Gain1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Demux5"
+      SrcPort		      1
+      DstBlock		      "MATLAB Function2"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Gain1"
+      SrcPort		      1
+      DstBlock		      "Rate Transition6"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Data Type Conversion3"
+      SrcPort		      1
+      Points		      [40, 0; 0, -595]
+      DstBlock		      "Mux1"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "Rate Transition6"
+      SrcPort		      1
+      Points		      [20, 0; 0, -5]
+      DstBlock		      "Data Type Conversion3"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Sum3"
+      SrcPort		      1
+      Points		      [45, 0]
+    }
+    Line {
+      SrcBlock		      "Demux7"
+      SrcPort		      1
+      Points		      [312, 0; 0, 15]
+      DstBlock		      "Sum13"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Sum13"
+      SrcPort		      1
+      Points		      [115, 0; 0, -860]
+      DstBlock		      "Mux1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Constant"
+      SrcPort		      1
+      Points		      [20, 0]
+      DstBlock		      "Sum13"
+      DstPort		      2
+    }
+    Annotation {
+      SID		      "371"
+      Position		      [898, 275]
+      ZOrder		      -1
+    }
+    Annotation {
+      SID		      "372"
+      Name		      "Ay"
+      Position		      [883, 499]
+      ZOrder		      -2
+    }
+    Annotation {
+      SID		      "373"
+      Name		      "Ax"
+      Position		      [877, 433]
+      ZOrder		      -3
+    }
+    Annotation {
+      SID		      "374"
+      Name		      "Gy"
+      Position		      [887, 335]
+      ZOrder		      -4
+    }
+    Annotation {
+      SID		      "375"
+      Name		      "Gx"
+      Position		      [887, 282]
+      ZOrder		      -5
+    }
+    Annotation {
+      SID		      "376"
+      Name		      "Gz"
+      Position		      [882, 385]
+      ZOrder		      -6
+    }
+    Annotation {
+      SID		      "377"
+      Name		      "Az"
+      Position		      [891, 562]
+      ZOrder		      -7
+    }
+    Annotation {
+      SID		      "378"
+      Name		      "Mx"
+      Position		      [885, 607]
+      ZOrder		      -8
+    }
+    Annotation {
+      SID		      "379"
+      Name		      "My"
+      Position		      [886, 662]
+      ZOrder		      -9
+    }
+    Annotation {
+      SID		      "380"
+      Name		      "Mz"
+      Position		      [898, 733]
+      ZOrder		      -10
+    }
+    Annotation {
+      SID		      "381"
+      Name		      "PWM"
+      Position		      [638, 1068]
+      ZOrder		      -11
+    }
+    Annotation {
+      SID		      "382"
+      Name		      "PWM"
+      Position		      [656, 1084]
+      ZOrder		      -12
+    }
+    Annotation {
+      SID		      "383"
+      Name		      "PWM"
+      Position		      [654, 1109]
+      ZOrder		      -13
+    }
+    Annotation {
+      SID		      "384"
+      Name		      "PWM"
+      Position		      [667, 1126]
+      ZOrder		      -14
+    }
+    Annotation {
+      SID		      "385"
+      Name		      "Latitude"
+      Position		      [637, 1002]
+      ZOrder		      -15
+    }
+    Annotation {
+      SID		      "386"
+      Name		      "Longitude"
+      Position		      [652, 1029]
+      ZOrder		      -16
+    }
+    Annotation {
+      SID		      "387"
+      Name		      "PWM"
+      Position		      [669, 1166]
+      ZOrder		      -17
+    }
+    Annotation {
+      SID		      "388"
+      Name		      "PWM"
+      Position		      [666, 1186]
+      ZOrder		      -18
+    }
+    Annotation {
+      SID		      "389"
+      Name		      "PWM"
+      Position		      [666, 1204]
+      ZOrder		      -19
+    }
+    Annotation {
+      SID		      "390"
+      Name		      "PWM"
+      Position		      [683, 1223]
+      ZOrder		      -20
+    }
+  }
+}
+MatData {
+  NumRecords		  1
+  DataRecord {
+    Tag			    DataTag0
+    Data		    "  %)30     .    D     8    (     @         %    \"     $    !     0         %  0 \"@    $    *    ;6]D9"
+    "6QN86UE          X   !     !@    @    $          4    (     0    \\    !         !     /    875T;W!I;&]T7VUO9&5L  "
+  }
+}
+# Finite State Machines
+#
+#    Stateflow Version 7.6 (R2013a) dated Jan 19 2013, 14:32:03
+#
+#
+
+Stateflow {
+  machine {
+    id			    1
+    name		    "autopilot_model"
+    created		    "17-Sep-2012 11:58:58"
+    isLibrary		    0
+    firstTarget		    16
+    sfVersion		    76014001.0015
+  }
+  chart {
+    id			    2
+    name		    "MATLAB Function1"
+    windowPosition	    [441 52 213 385]
+    viewLimits		    [0 156.75 0 153.75]
+    screen		    [1 1 1366 768 1.333333333333333]
+    treeNode		    [0 3 0 0]
+    firstTransition	    7
+    firstJunction	    6
+    viewObj		    2
+    visible		    1
+    machine		    1
+    subviewS {
+    }
+    ssIdHighWaterMark	    5
+    decomposition	    CLUSTER_CHART
+    type		    EML_CHART
+    firstData		    4
+    chartFileNumber	    1
+    disableImplicitCasting  1
+    eml {
+      name		      "fcn_unit322single"
+    }
+  }
+  state {
+    id			    3
+    labelString		    "eML_blk_kernel()"
+    position		    [18 64.5 118 66]
+    fontSize		    12
+    chart		    2
+    treeNode		    [2 0 0 0]
+    superState		    SUBCHART
+    subviewer		    2
+    ssIdNumber		    1
+    type		    FUNC_STATE
+    decomposition	    CLUSTER_STATE
+    eml {
+      isEML		      1
+      script		      "function y = fcn_unit322single(u)\n%#codegen\n\ny = typecast(u,'single');"
+      editorLayout	      "100 M4x1[65 65 768 461]"
+    }
+  }
+  data {
+    id			    4
+    ssIdNumber		    4
+    name		    "u"
+    linkNode		    [2 0 5]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	primitive		SF_UINT32_TYPE
+      }
+      complexity	      SF_COMPLEX_INHERITED
+    }
+    dataType		    "uint32"
+  }
+  data {
+    id			    5
+    ssIdNumber		    5
+    name		    "y"
+    linkNode		    [2 4 0]
+    scope		    OUTPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	primitive		SF_SINGLE_TYPE
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_NO
+    }
+    dataType		    "single"
+  }
+  junction {
+    id			    6
+    position		    [23.5747 49.5747 7]
+    chart		    2
+    linkNode		    [2 0 0]
+    subviewer		    2
+    ssIdNumber		    3
+    type		    CONNECTIVE_JUNCTION
+  }
+  transition {
+    id			    7
+    labelString		    "{eML_blk_kernel();}"
+    labelPosition	    [32.125 19.875 102.544 14.964]
+    fontSize		    12
+    src {
+      intersection	      [0 0 1 0 23.5747 14.625 0 0]
+    }
+    dst {
+      id		      6
+      intersection	      [1 0 -1 0 23.5747 42.5747 0 0]
+    }
+    midPoint		    [23.5747 24.9468]
+    chart		    2
+    linkNode		    [2 0 0]
+    dataLimits		    [21.175 25.975 14.625 42.575]
+    subviewer		    2
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    2
+  }
+  instance {
+    id			    8
+    name		    "MATLAB Function1"
+    machine		    1
+    chart		    2
+  }
+  chart {
+    id			    9
+    name		    "MATLAB Function2"
+    windowPosition	    [461 52 213 385]
+    viewLimits		    [0 156.75 0 153.75]
+    screen		    [1 1 1366 768 1.333333333333333]
+    treeNode		    [0 10 0 0]
+    firstTransition	    14
+    firstJunction	    13
+    viewObj		    9
+    machine		    1
+    toolbarMode		    LIBRARY_TOOLBAR
+    ssIdHighWaterMark	    5
+    decomposition	    CLUSTER_CHART
+    type		    EML_CHART
+    firstData		    11
+    chartFileNumber	    2
+    disableImplicitCasting  1
+    eml {
+      name		      "fcn_unit322single"
+    }
+  }
+  state {
+    id			    10
+    labelString		    "eML_blk_kernel()"
+    position		    [18 64.5 118 66]
+    fontSize		    12
+    chart		    9
+    treeNode		    [9 0 0 0]
+    superState		    SUBCHART
+    subviewer		    9
+    ssIdNumber		    1
+    type		    FUNC_STATE
+    decomposition	    CLUSTER_STATE
+    eml {
+      isEML		      1
+      script		      "function y = fcn_unit322single(u)\n%#codegen\n\ny = typecast(u,'single');"
+      editorLayout	      "100 M4x1[25 25 768 461]"
+    }
+  }
+  data {
+    id			    11
+    ssIdNumber		    4
+    name		    "u"
+    linkNode		    [9 0 12]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	primitive		SF_UINT32_TYPE
+      }
+      complexity	      SF_COMPLEX_INHERITED
+    }
+    dataType		    "uint32"
+  }
+  data {
+    id			    12
+    ssIdNumber		    5
+    name		    "y"
+    linkNode		    [9 11 0]
+    scope		    OUTPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	primitive		SF_SINGLE_TYPE
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_NO
+    }
+    dataType		    "single"
+  }
+  junction {
+    id			    13
+    position		    [23.5747 49.5747 7]
+    chart		    9
+    linkNode		    [9 0 0]
+    subviewer		    9
+    ssIdNumber		    3
+    type		    CONNECTIVE_JUNCTION
+  }
+  transition {
+    id			    14
+    labelString		    "{eML_blk_kernel();}"
+    labelPosition	    [32.125 19.875 102.544 14.964]
+    fontSize		    12
+    src {
+      intersection	      [0 0 1 0 23.5747 14.625 0 0]
+    }
+    dst {
+      id		      13
+      intersection	      [1 0 -1 0 23.5747 42.5747 0 0]
+    }
+    midPoint		    [23.5747 24.9468]
+    chart		    9
+    linkNode		    [9 0 0]
+    dataLimits		    [23.575 23.575 14.625 34.575]
+    subviewer		    9
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    2
+  }
+  instance {
+    id			    15
+    name		    "MATLAB Function2"
+    machine		    1
+    chart		    9
+  }
+  target {
+    id			    16
+    name		    "sfun"
+    description		    "Default Simulink S-Function Target."
+    machine		    1
+    linkNode		    [1 0 17]
+  }
+  target {
+    id			    17
+    name		    "rtw"
+    machine		    1
+    linkNode		    [1 16 0]
+  }
+}
