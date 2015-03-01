@@ -203,16 +203,16 @@ static void mdlStart(SimStruct *S)
      res = VCI_Clr_RxMsgBuf(port);
    
      /* error check */
-  	 if(res > 0){
-  		 ssSetErrorStatus(S, "Buffer nnot cleared correctly\n");
-  	 }
+     if(res > 0){
+     	 ssSetErrorStatus(S, "Buffer nnot cleared correctly\n");
+     }
      
      /* check if Rx buffer has been cleared entirely */
      res = VCI_Get_RxMsgCnt(port,&conta);
 
      /* error check */
-     if(res >0){
-		  	ssSetErrorStatus(S, "Error in VCI_Get_RxMsgCnt\n");
+     if(res > 0){
+     	 ssSetErrorStatus(S, "Error in VCI_Get_RxMsgCnt\n");
      }
     
      /* we start counting from here */
@@ -239,7 +239,7 @@ static void mdlOutputs(SimStruct *S, int_T tid)
            i: variable used in 'for' loops 
       */
       int res,i ;
-      /* variable used for sinchronization */
+      /* variable used for synchronization */
       bool is_ok = false;  
       
       /* packets configuration to send data */
@@ -247,15 +247,15 @@ static void mdlOutputs(SimStruct *S, int_T tid)
       /* dates for gyroscope and Ax(accelerometer)  ID: 0x60F */
       Packet_gyro Inerz1;   
       /* dates for accelerometer Ay, Az and Magnetometer Mx,My   ID: 0x40F */
-    	Packet_accel_magn Inerz2; 
+      Packet_accel_magn Inerz2; 
       /* using the first part only (16 bit) to send Mz and a floating point number for pression data  ID:0x30F */  
-    	Packet_magn_press Inerz3;   
-	  /* Packet used for GPS data */
+      Packet_magn_press Inerz3;   
+      /* Packet used for GPS data */
       Packet_GPS Inerz4;
       /* used for GPS data: two floating point numbers. ID: 0x20F */
-    	Packet_rc1 Inerz5;      
+      Packet_rc1 Inerz5;      
       /* used for GPS data: one floating point number. ID: 0x10F */
-    	Packet_rc2 Inerz6;      
+      Packet_rc2 Inerz6;      
       
       /* packets not sent */
       Packet_rc3 Inerz7;
@@ -263,7 +263,7 @@ static void mdlOutputs(SimStruct *S, int_T tid)
       Packet_ADC  Inerz9;
           
       /* variable used to send messages */
-	     _VCI_CAN_MSG CANRx;
+      _VCI_CAN_MSG CANRx;
       /* memory allocation configuration */
       memset(&CANRx,0,sizeof(CANRx));
       
@@ -300,135 +300,135 @@ static void mdlOutputs(SimStruct *S, int_T tid)
       /* 11-bit ID */
       Inerz1.Mode=0; 
       /* No-RTR */
-    	Inerz1.RTR=0;
+      Inerz1.RTR=0;
       /* 8 bytes to send */ 
-    	Inerz1.DLC=8; 
+      Inerz1.DLC=8; 
       /* 1551 value in hex format */
-    	Inerz1.ID=0x60F;  
-    	/* Data[0],Data[1]: Gx */
-    	Inerz1.Data[0]=*u1;
+      Inerz1.ID=0x60F;  
+      /* Data[0],Data[1]: Gx */
+      Inerz1.Data[0]=*u1;
       Inerz1.Data[1]=*(u1+1);
-  	  /* Data[2],Data[3]: Gy */
+      /* Data[2],Data[3]: Gy */
       Inerz1.Data[2]=*(u1+2);
-  	  Inerz1.Data[3]=*(u1+3);
-    	/* Data[4],Data[5]: Gz */
-    	Inerz1.Data[4]=*(u1+4);
+      Inerz1.Data[3]=*(u1+3);
+      /* Data[4],Data[5]: Gz */
+      Inerz1.Data[4]=*(u1+4);
       Inerz1.Data[5]=*(u1+5);
       /* Data[6],Data[7]: Ax */
-    	Inerz1.Data[6]=*(u1+6);
-    	Inerz1.Data[7]=*(u1+7);
+      Inerz1.Data[6]=*(u1+6);
+      Inerz1.Data[7]=*(u1+7);
         
-    	/* packet Inerz2 configuration */
+      /* packet Inerz2 configuration */
 
       /* 11-bit ID */
-    	Inerz2.Mode=0;
+      Inerz2.Mode=0;
       /* No-RTR */
-    	Inerz2.RTR=0;
+      Inerz2.RTR=0;
       /* 8 bytes to send */
-    	Inerz2.DLC=8;
+      Inerz2.DLC=8;
       /* 1039 value in hex format */
-    	Inerz2.ID=0x40F; 
-    	/* Data[0],Data[1]:Ay */
-    	Inerz2.Data[0]=*u2;
-    	Inerz2.Data[1]=*(u2+1);
-    	/* Data[2],Data[3]: Az */
-    	Inerz2.Data[2]=*(u2+2);
-    	Inerz2.Data[3]=*(u2+3);
-    	/* Data[4],Data[5]:Mx */
-    	Inerz2.Data[4]=*(u2+4);
-    	Inerz2.Data[5]=*(u2+5);
-    	/* Data[6],Data[7]:My */
-    	Inerz2.Data[6]=*(u2+6);
-    	Inerz2.Data[7]=*(u2+7);
+      Inerz2.ID=0x40F; 
+      /* Data[0],Data[1]:Ay */
+      Inerz2.Data[0]=*u2;
+      Inerz2.Data[1]=*(u2+1);
+      /* Data[2],Data[3]: Az */
+      Inerz2.Data[2]=*(u2+2);
+      Inerz2.Data[3]=*(u2+3);
+      /* Data[4],Data[5]:Mx */
+      Inerz2.Data[4]=*(u2+4);
+      Inerz2.Data[5]=*(u2+5);
+      /* Data[6],Data[7]:My */
+      Inerz2.Data[6]=*(u2+6);
+      Inerz2.Data[7]=*(u2+7);
 
-    	/* packet Inerz3 configuration */
+      /* packet Inerz3 configuration */
 
       /* 11-bit ID */
-    	Inerz3.Mode=0;
+      Inerz3.Mode=0;
       /* No-RTR */
-    	Inerz3.RTR=0;
+      Inerz3.RTR=0;
       /* 8 bytes to send */
-    	Inerz3.DLC=8;
+      Inerz3.DLC=8;
       /* 783 value in hex format */
-    	Inerz3.ID=0x30F;  
-    	/* Data[0],Data[1]:Mz */
-    	Inerz3.Data[0]=*u3;
-    	Inerz3.Data[1]=*(u3+1);
+      Inerz3.ID=0x30F;  
+      /* Data[0],Data[1]:Mz */
+      Inerz3.Data[0]=*u3;
+      Inerz3.Data[1]=*(u3+1);
       /* Data[2],Data[3],Data[4],Data[5]: pression data (float1) */
-    	Inerz3.Data[2]=*(u3+2);
-    	Inerz3.Data[3]=*(u3+3);
-    	Inerz3.Data[4]=*(u3+4);
-    	Inerz3.Data[5]=*(u3+5);
+      Inerz3.Data[2]=*(u3+2);
+      Inerz3.Data[3]=*(u3+3);
+      Inerz3.Data[4]=*(u3+4);
+      Inerz3.Data[5]=*(u3+5);
       /* other bytes can be used for fixmode data */
-    	Inerz3.Data[6]=0x00;
-    	Inerz3.Data[7]=0x00;
+      Inerz3.Data[6]=0x00;
+      Inerz3.Data[7]=0x00;
     
       /* packet Inerz4 configuration */
 
       /* 11-bit ID */
-    	Inerz4.Mode=0;
+      Inerz4.Mode=0;
       /* No-RTR */
-    	Inerz4.RTR=0;
+      Inerz4.RTR=0;
       /* 8 bytes to send */
-    	Inerz4.DLC=8;
+      Inerz4.DLC=8;
       /* 527 value in hex format */
-    	Inerz4.ID=0x20F;   
-    	/* Data[0],Data[1],Data[2],Data[3]: float2 (Latitude) (GPS) */
-    	Inerz4.Data[0]=*u4;
-    	Inerz4.Data[1]=*(u4+1);
-    	Inerz4.Data[2]=*(u4+2);
-    	Inerz4.Data[3]=*(u4+3);
+      Inerz4.ID=0x20F;   
+      /* Data[0],Data[1],Data[2],Data[3]: float2 (Latitude) (GPS) */
+      Inerz4.Data[0]=*u4;
+      Inerz4.Data[1]=*(u4+1);
+      Inerz4.Data[2]=*(u4+2);
+      Inerz4.Data[3]=*(u4+3);
       /* Data[4],Data[5],Data[6],Data[7]: float3 (Longitude) (GPS) */
-    	Inerz4.Data[4]=*(u4+4);
-    	Inerz4.Data[5]=*(u4+5);
-    	Inerz4.Data[6]=*(u4+6);
-    	Inerz4.Data[7]=*(u4+7);
+      Inerz4.Data[4]=*(u4+4);
+      Inerz4.Data[5]=*(u4+5);
+      Inerz4.Data[6]=*(u4+6);
+      Inerz4.Data[7]=*(u4+7);
     
       /* packet Inerz5 configuration */
 
       /* 11-bit ID */
-    	Inerz5.Mode=0;
+      Inerz5.Mode=0;
       /* No-RTR */
-    	Inerz5.RTR=0;
+      Inerz5.RTR=0;
       /* 8 bytes to send */
-    	Inerz5.DLC=8;
+      Inerz5.DLC=8;
       /* 271 value in hex format */
-    	Inerz5.ID=0x10F;  
+      Inerz5.ID=0x10F;  
       /* Data[0],Data[1]: uint16 (PWM) */
-    	Inerz5.Data[0]=*u5;
-    	Inerz5.Data[1]=*(u5+1);
+      Inerz5.Data[0]=*u5;
+      Inerz5.Data[1]=*(u5+1);
       /* Data[2],Data[3]: uint16 (PWM) */
-    	Inerz5.Data[2]=*(u5+2);
-    	Inerz5.Data[3]=*(u5+3);
+      Inerz5.Data[2]=*(u5+2);
+      Inerz5.Data[3]=*(u5+3);
       /* Data[4],Data[5]: uint16 (PWM) */
-    	Inerz5.Data[4]=*(u5+4);
-    	Inerz5.Data[5]=*(u5+5);
+      Inerz5.Data[4]=*(u5+4);
+      Inerz5.Data[5]=*(u5+5);
       /* Data[6],Data[7]: uint16 (PWM) */
-    	Inerz5.Data[6]=*(u5+6);
-    	Inerz5.Data[7]=*(u5+7);
+      Inerz5.Data[6]=*(u5+6);
+      Inerz5.Data[7]=*(u5+7);
     
       /* packet Inerz6 configuration */
 
       /* 11-bit ID */
-    	Inerz6.Mode=0;
+      Inerz6.Mode=0;
       /* No-RTR */
-    	Inerz6.RTR=0;
+      Inerz6.RTR=0;
       /* 8 bytes to send */
-    	Inerz6.DLC=8;
+      Inerz6.DLC=8;
       /* 1807 value in hex format */
-    	Inerz6.ID=0x70F;  
-    	/* Data[0],Data[1]: uint16 (PWM) */
-    	Inerz6.Data[0]=*u6;
-    	Inerz6.Data[1]=*(u6+1);
+      Inerz6.ID=0x70F;  
+      /* Data[0],Data[1]: uint16 (PWM) */
+      Inerz6.Data[0]=*u6;
+      Inerz6.Data[1]=*(u6+1);
       /* Data[2],Data[3]: uint16 (PWM) */ 
-    	Inerz6.Data[2]=*(u6+2);
-    	Inerz6.Data[3]=*(u6+3);
+      Inerz6.Data[2]=*(u6+2);
+      Inerz6.Data[3]=*(u6+3);
       /* Data[4],Data[5]: uint16 (PWM) */
-    	Inerz6.Data[4]=*(u6+4);
-    	Inerz6.Data[5]=*(u6+5);
+      Inerz6.Data[4]=*(u6+4);
+      Inerz6.Data[5]=*(u6+5);
       /* Data[6],Data[7]: uint16 (PWM) */
-    	Inerz6.Data[6]=*(u6+6);
-    	Inerz6.Data[7]=*(u6+7);
+      Inerz6.Data[6]=*(u6+6);
+      Inerz6.Data[7]=*(u6+7);
     
       /* packet Inerz7 configuration */
 
@@ -516,8 +516,8 @@ static void mdlOutputs(SimStruct *S, int_T tid)
 
             /* error check */
             if(res > 0){
-      			     ssSetErrorStatus(S, "error in VCI_Get_RxMsgCnt\n");
-    		    }
+      		     ssSetErrorStatus(S, "error in VCI_Get_RxMsgCnt\n");
+    	    }
    
             /* buffer must be cleared */
             while(conta != 0){
@@ -527,8 +527,8 @@ static void mdlOutputs(SimStruct *S, int_T tid)
 
                 /* error check */
                 if(res > 0){
-    			         ssSetErrorStatus(S, "error in VCI_Get_RecvCANMsg\n");
-    		        }
+    		         ssSetErrorStatus(S, "error in VCI_Get_RecvCANMsg\n");
+    	        }
                 
                 /*decrease counter variable */
                 conta--;
@@ -540,7 +540,7 @@ static void mdlOutputs(SimStruct *S, int_T tid)
       }
     
       /**
-       * Sinchronization 
+       * Synchronization 
       */
 
       /* variable used for timeout */
@@ -561,9 +561,9 @@ static void mdlOutputs(SimStruct *S, int_T tid)
                res = VCI_Get_RxMsgCnt(port,&conta);
 
                /* error check */
-        		   if(res > 0){
-        			     ssSetErrorStatus(S, "Error in VCI_Get_RxMsgCnt\n");
-        		   }
+	   	if(res > 0){
+		     ssSetErrorStatus(S, "Error in VCI_Get_RxMsgCnt\n");
+	   	}
 
                /* time elapsed (in seconds) */
                seconds = timeout(time1); 
@@ -572,7 +572,7 @@ static void mdlOutputs(SimStruct *S, int_T tid)
                if(seconds > 20){ 
                        break;
                }
-    	      }
+           }
       
        
            /* We have to check if timeout has expired or if 'conta' is not 0 */
@@ -587,7 +587,7 @@ static void mdlOutputs(SimStruct *S, int_T tid)
            
            /* error check */
            if(res > 0){
-    		      ssSetErrorStatus(S, "Error while receiving first message\n");
+    	       	ssSetErrorStatus(S, "Error while receiving first message\n");
            }
            
            /* decrease counter variable */
@@ -629,8 +629,7 @@ static void mdlOutputs(SimStruct *S, int_T tid)
 
                 /*  error check */
       	        if(res > 0){
-
-      		           ssSetErrorStatus(S, "Error while receiving next message\n");
+      	           	ssSetErrorStatus(S, "Error while receiving next message\n");
       	        }
              	  
                 /* output data configuration */
@@ -644,9 +643,8 @@ static void mdlOutputs(SimStruct *S, int_T tid)
 
                 /* error check */
                 if(res>0){
-
-    		            ssSetErrorStatus(S, "Error while receiving next message\n");
-    	          }
+        		ssSetErrorStatus(S, "Error while receiving next message\n");
+              	}
                
                 /* output data configuration */
                 y4[0] = (uint16_T)(CANRx.Data[1] << 8 | CANRx.Data[0]);
@@ -665,20 +663,20 @@ static void mdlOutputs(SimStruct *S, int_T tid)
     	           res = VCI_Get_RxMsgCnt(port,&conta);
 
                  /* error check */
-        	       if(res > 0){
-        			       ssSetErrorStatus(S, "error in VCI_Get_RxMsgCnt\n");
-        	       }
+       		 if(res > 0){
+		       	ssSetErrorStatus(S, "error in VCI_Get_RxMsgCnt\n");
+       		 }
     	   
-        	       if(conta > 0){
-        	             
-                       /* clear Rx buffer */
-                       res = VCI_Clr_RxMsgBuf(port);
-
-                       /* error check */
-          	           if(res > 0){
-          		           ssSetErrorStatus(S, "Buffer not cleared correctly \n");
-          	           }
-        	       }
+	         if(conta > 0){
+	             
+	                 /* clear Rx buffer */
+	                 res = VCI_Clr_RxMsgBuf(port);
+	
+	                 /* error check */
+	  	         if(res > 0){
+	  	          	ssSetErrorStatus(S, "Buffer not cleared correctly \n");
+	     		 }
+	    	 }
             }
     	   
             /* counter variable set to 0 */
@@ -704,23 +702,23 @@ static void mdlOutputs(SimStruct *S, int_T tid)
     /* send 1st message */
     res = VCI_SendCANMsg(port,&Inerz1);
 
-  	if(res > 0){
-  		  ssSetErrorStatus(S, "Error while sending 1st message\n");
-  	}
+    if(res > 0){
+  	  ssSetErrorStatus(S, "Error while sending 1st message\n");
+    }
       
     /* send 2nd message */
-  	res = VCI_SendCANMsg(port,&Inerz2);
+    res = VCI_SendCANMsg(port,&Inerz2);
 
-  	if(res > 0){
-  		  ssSetErrorStatus(S, "Error while sending 2nd message\n");
-  	}
+    if(res > 0){
+  	  ssSetErrorStatus(S, "Error while sending 2nd message\n");
+    }
       
     /* send 3rd message */
-  	res = VCI_SendCANMsg(port,&Inerz3);
+    res = VCI_SendCANMsg(port,&Inerz3);
 
-  	if(res > 0){
-  		ssSetErrorStatus(S, "Error while sending 3rd message\n");
-  	}
+    if(res > 0){
+  	ssSetErrorStatus(S, "Error while sending 3rd message\n");
+    }
         
     /*One message must be sent at a lower frequency */
     if(low_frequency == 20){
@@ -730,8 +728,8 @@ static void mdlOutputs(SimStruct *S, int_T tid)
 
         /* error check */
         if(res > 0){
-		        ssSetErrorStatus(S, "Error while sending 4th message\n");
-	      }
+	        ssSetErrorStatus(S, "Error while sending 4th message\n");
+	}
 
         /* frequency variable is set to 0 */
         low_frequency = 0;
@@ -742,16 +740,16 @@ static void mdlOutputs(SimStruct *S, int_T tid)
 
     /* error check */
     if(res > 0){
-		   ssSetErrorStatus(S, "Error while sendin 5th message\n");
-	  }
+	ssSetErrorStatus(S, "Error while sendin 5th message\n");
+    }
 
     /* send 6th message */
     res = VCI_SendCANMsg(port,&Inerz6);
 
     /* error check */
     if(res > 0){
-		   ssSetErrorStatus(S, "Error while sending 6th message\n");
-	  }
+	ssSetErrorStatus(S, "Error while sending 6th message\n");
+    }
     
 }
 
@@ -765,9 +763,9 @@ static void mdlTerminate(SimStruct *S)
      /* close CAN port */
      int_T res= VCI_CloseCAN(pCAN.DevPort);
 
-     if(res > 0){
-		   ssSetErrorStatus(S, "Error while closing CAN port\n");
-	   }
+      if(res > 0){
+	ssSetErrorStatus(S, "Error while closing CAN port\n");
+      }
     
       #ifndef MATLAB_MEX_FILE
       SetPriorityClass(GetCurrentProcess(), NORMAL_PRIORITY_CLASS);
