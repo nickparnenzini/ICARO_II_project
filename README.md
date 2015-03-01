@@ -1,6 +1,5 @@
-####################################################
-############## ICARO II project ####################
-####################################################
+
+ICARO II project 
 
 This is a Hardware-In-the-Loop simulation.
 ICARO II is an autopilot manifactured by University of Pisa.
