@@ -7,7 +7,7 @@ A synchronization protocol is presented, developed to keep simulator and
 autopilot synchronized.
 
 For more information, you could also see this paper: 
-http://www.wseas.us/e-library/conferences/2012/Vienna/COMPUTERS/COMPUTERS-68.pdf
+http://hdl.handle.net/11568/203216
 
 
 
